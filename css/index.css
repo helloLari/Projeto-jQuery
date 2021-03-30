@@ -41,6 +41,7 @@ h1 {
 #prevencao {
   color: var(--cor-texto-escura);
   text-align: center;
+  padding-bottom: 150px;
 }
 
 #prevencao-cards {
@@ -70,7 +71,8 @@ h1 {
 
 #vacina-container {
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 380px;
+  min-height: 800px;
 }
 
 #vacina-info h2 {
@@ -89,7 +91,72 @@ h1 {
 
 #vacina-info p {
   text-align: justify;
+  max-width: 860px;
 }
 
-#vacina-image {
+#vacina-info p:nth-of-type(2) {
+  margin-bottom: 160px;
+}
+
+#vacina-image img {
+  width: 350px;
+  margin: -200px auto;
+}
+
+/* Eficácia */
+
+#eficacia-fundo {
+  background-color: var(--cor-fundo-XXclara);
+}
+
+#eficacia-container {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  min-height: 800px;
+}
+
+#eficacia-image img {
+  width: 350px;
+  margin: -200px auto;
+}
+
+#eficacia-info h2 {
+  color: #00c3ff;
+  font-size: 3em;
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+#eficacia-card-cont {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.eficacia-card {
+  background-color: var(--cor-fundo-Xclara);
+  width: 200px;
+  padding: 0 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.eficacia-card img {
+  display: block;
+  width: 100%;
+  margin: 10px auto -10px;
+}
+
+.eficacia-card h4 {
+  text-align: center;
+  background-color: var(--cor-fundo-Xescuro);
+  color: var(--cor-texto-clara);
+}
+
+.eficacia-card ul {
+  list-style: none;
+}
+.eficacia-card ul li {
+  margin-left: -33px;
+  font-size: 0.8em;
+  padding-bottom: 10px;
 }
