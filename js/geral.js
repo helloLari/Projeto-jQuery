@@ -1,3 +1,7 @@
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ------ Acessibilidade ------ */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
 var tamanhoFonte = "normal";
 
 window.onload = function(){
@@ -25,9 +29,9 @@ function trocarFonte(){
     sessionStorage.setItem("fonte", tamanhoFonte)
 }
 
-
-
-
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ------- Email Rodapé ------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 
 
 function validacaoEmail(field) {

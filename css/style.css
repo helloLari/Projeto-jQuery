@@ -13,6 +13,7 @@ body {
 }
 
 :root {
+  --cor-fundo-XXclara: #f2fdfd;
   --cor-fundo-Xclara: #dbf6f5;
   --cor-fundo-clara: #b3e6e3;
   --cor-fundo-medio: #92d6d3;
@@ -66,7 +67,7 @@ header {
 }
 
 main {
-  min-height: calc(100vh - 290px - 80px);
+  min-height: calc(100vh - 310px - 80px);
   background-color: whitesmoke;
 }
 
@@ -75,14 +76,14 @@ main {
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 
 footer {
-  min-height: 290px;
+  min-height: 310px;
   background-color: var(--cor-fundo-medio);
   color: var(--cor-texto-escura);
 }
 
 #footer-contato {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 #footer-contato p {

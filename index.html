@@ -9,15 +9,33 @@
 
     <title>Vacina Ai</title>
 
+    <!-- CSS Gerais-->
     <link rel='stylesheet' type='text/css' media='screen' href='css/sanitize-full.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
 
+    <!-- jQuery e jQuery Ui -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/jquery-ui.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/jquery-ui.theme.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/jquery-ui.structure.css'>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <!-- Scripts Gerais-->
     <script src="js/geral.js"></script>
     <script src="js/index.js"></script>
 
+
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/5cf15c459a.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(function () {
+            $("#menu").menu();
+        });
+    </script>
+
 
 </head>
 
@@ -29,11 +47,24 @@
             </div>
             <div id="header-icones">
                 <div onclick="trocarFonte()" id="tamanho-fonte"><i class="fas fa-text-height"></i></div>
-                <div id="menu"><i class="fas fa-bars"></i></div>
+                <div id="menu-icone"><i class="fas fa-bars"></i>
+                    <ul id="menu">
+                        <li>
+                            <div>Nivel de alerta</div>
+                        </li>
+                        <li>
+                            <div>Formulário de Vacinação</div>
+                        </li>
+                        <li>
+                            <div>Sobre Nós</div>
+                        </li>
+                </div>
             </div>
         </div>
     </header>
     <main>
+
+
 
     </main>
     <footer>
