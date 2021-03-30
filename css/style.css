@@ -4,9 +4,33 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.fonte-normal {
+  font-size: 1.1em;
+}
+
+.fonte-grande {
+  font-size: 1.3em;
+}
+
+:root {
+  --cor-fundo-Xclara: #dbf6f5;
+  --cor-fundo-clara: #b3e6e3;
+  --cor-fundo-medio: #92d6d3;
+  --cor-fundo-Xmedio: #57c0bc;
+  --cor-fundo-escuro: #44b6b3;
+  --cor-fundo-Xescuro: #216b69;
+  --cor-texto-clara: #f1f1f1;
+  --cor-texto-escura: #083d3b;
+  --cor-texto-Xescura: #252525;
+}
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ---------- Header ---------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
 header {
   height: 80px;
-  background-color: #44b6b3;
+  background-color: var(--cor-fundo-escuro);
   line-height: 80px;
 }
 
@@ -22,8 +46,23 @@ header {
   height: 80px;
 }
 
-#menu {
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ------------ Menu ---------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
+#header-icones {
+  display: flex;
+}
+#header-icones i {
+  color: var(--cor-texto-escura);
+  padding: 23px 5px 23px;
+  margin: 0 0 0 15px;
   font-size: 30px;
+}
+
+#header-icones i:hover {
+  color: var(--cor-texto-clara);
+  cursor: pointer;
 }
 
 main {
@@ -31,9 +70,14 @@ main {
   background-color: whitesmoke;
 }
 
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ---------- Footer ---------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
 footer {
   min-height: 290px;
-  background-color: #92d6d3;
+  background-color: var(--cor-fundo-medio);
+  color: var(--cor-texto-escura);
 }
 
 #footer-contato {
@@ -64,29 +108,29 @@ footer {
 #email {
   background-color: rgba(255, 255, 255, 0.746);
   border: none;
-  color: rgb(36, 36, 36);
+  color: var(--cor-texto-escura);
   padding: 0.5em 0.6em;
   border-radius: 6px;
   width: 250px;
+  padding-right: 30px;
 }
 
 #contato-email button {
   font-variant: small-caps;
   font-weight: 500;
   border: none;
-  background: #57c0bc;
-  color: #0f5754;
+  background: var(--cor-fundo-escuro);
+  color: var(--cor-texto-escura);
   outline: none;
-  margin-left: -25px;
+  margin-left: -20px;
   border-radius: 8px;
   border-style: none;
   padding: 0.5em 0.6em;
-  width: 120px;
+  width: 135px;
 }
 
 #contato-email button:hover {
-  background-color: #277471;
-  border-color: black;
+  background-color: var(--cor-fundo-Xescuro);
   color: white;
   border: 2px;
 }
@@ -101,16 +145,16 @@ footer {
 
 #links-footer a {
   text-decoration: none;
-  background-color: #92d6d3;
-  color: #0f5754;
+  background-color: var(--cor-fundo-medio);
+  color: var(--cor-texto-escura);
   border-radius: 50%;
   transition: 0.5s;
 }
 
 #links-footer a:hover {
   text-decoration: none;
-  color: #92d6d3;
-  background-color: #0f5754;
+  color: var(--cor-fundo-medio);
+  background-color: var(--cor-texto-escura);
   border-radius: 50%;
 }
 

@@ -1,3 +1,35 @@
+var tamanhoFonte = "normal";
+
+window.onload = function(){
+    let fonteSalva = sessionStorage.getItem("fonte");
+    if (fonteSalva == "normal"){
+        tamanhoFonte = "grande";
+    } else if (fonteSalva == "grande"){
+        tamanhoFonte = "normal";
+    }
+    trocarFonte();
+}
+
+function trocarFonte(){
+    let div = document.getElementById("tamanho-fonte");
+    switch (tamanhoFonte){
+        case "normal":
+            div.className = "fonte-grande";
+            tamanhoFonte = "grande"
+            break;
+        case "grande":
+            div.className = "fonte-normal";
+            tamanhoFonte = "normal"
+            break;
+    }
+    sessionStorage.setItem("fonte", tamanhoFonte)
+}
+
+
+
+
+
+
 function validacaoEmail(field) {
 
     if (field == undefined){
