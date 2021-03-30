@@ -17,21 +17,35 @@
     <script src="js/geral.js"></script>
     <script src="js/index.js"></script>
 
+    <script src="https://kit.fontawesome.com/5cf15c459a.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <header>
-        <div id="header-logo-cont">
-            <img src="" alt="Logo Vacina Ai">
-        </div>
-        <div id="header-icones">
-            <div id=""></div>
+        <div id="header-container">
+            <div id="header-logo-cont">
+                <img src="img/logomarca.png" alt="Logo Vacina Ai"></img>
+            </div>
+            <div id="header-icones">
+                <div id="menu"><i class="fas fa-bars"></i></div>
+            </div>
         </div>
     </header>
     <main>
 
     </main>
     <footer>
+        <div id="footer-container">
+            <div id="footer-contato">
+                <p>Receba mais informações</p>
+                <div id="contato-email">
+                    <input type="email" name="email" id="email" placeholder="E-mail" onblur="validacaoEmail()"
+                        oninput="this.value=this.value.toLowerCase()">
+                    <button onclick="cadastrarEmail()">Cadastrar</button>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
