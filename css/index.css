@@ -1,3 +1,18 @@
+/*
+--cor-fundo-XXclara: #f2fdfd;
+--cor-fundo-Xclara: #dbf6f5;
+--cor-fundo-clara: #b3e6e3;
+--cor-fundo-medio: #92d6d3;
+--cor-fundo-Xmedio: #57c0bc;
+--cor-fundo-escuro: #44b6b3;
+--cor-fundo-Xescuro: #216b69;
+--cor-texto-clara: #f1f1f1;
+--cor-texto-escura: #083d3b;
+--cor-texto-Xescura: #252525;
+*/
+
+/* Banner */
+
 #banner {
   height: 50vh;
   background-image: url(../img/banner-1.jpg);
@@ -5,9 +20,76 @@
   background-size: cover;
 }
 
-#accordion-container {
+/* Info */
+
+h1 {
+  font-variant: small-caps;
+  font-size: 1.8em;
+}
+
+.container {
   width: 90%;
   max-width: 1500px;
   margin: auto;
   padding: 10px 0;
+}
+
+#prevencao-fundo {
+  background-color: var(--cor-fundo-XXclara);
+}
+
+#prevencao {
+  color: var(--cor-texto-escura);
+  text-align: center;
+}
+
+#prevencao-cards {
+  max-width: 900px;
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  background-color: var(--cor-fundo-Xclara);
+  width: 260px;
+  padding: 0 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  margin: -10px 0 20px 0;
+}
+
+/* Vacinas */
+
+#vacina-fundo {
+  background-color: var(--cor-fundo-Xclara);
+}
+
+#vacina-container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+}
+
+#vacina-info h2 {
+  color: #00c3ff;
+  font-size: 3em;
+  margin: 20px 0 0;
+}
+
+#vacina-info h3 {
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1.2em;
+  width: 50%;
+  margin: 0;
+}
+
+#vacina-info p {
+  text-align: justify;
+}
+
+#vacina-image {
 }

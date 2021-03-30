@@ -50,8 +50,18 @@ $(function () {
 
 function RetornaDataHoraAtual(){
     var agora = new Date();
-    var localdate = agora.getDate() + "/" + (agora.getMonth()+1) + "/" + agora.getFullYear() + " " + agora.getHours() + ":" + agora.getMinutes();
+    var localdate = agora.getDate() + "/" + (agora.getMonth()+1) + "/" + agora.getFullYear() + " " + agora.getHours() + ":" +  ad0s(agora.getMinutes(), 2);
     return localdate;
+}
+
+
+// Adiciona 0s
+function ad0s(num, tamanho) {
+    num = num.toString();
+    while (num.length < tamanho) {
+        num = "0" + num;
+    }
+    return num;
 }
 
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
