@@ -1,0 +1,14 @@
+header {
+  height: 60px;
+  background-color: aquamarine;
+}
+
+main {
+  min-height: calc(100vh - 120px);
+  background-color: beige;
+}
+
+footer {
+  min-height: 60px;
+  background-color: aquamarine;
+}
