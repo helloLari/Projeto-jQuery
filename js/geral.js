@@ -41,6 +41,20 @@ $(function () {
 });
 
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* -------- Data e Hora ------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
+$(function () {
+    $("date").text(RetornaDataHoraAtual())
+})
+
+function RetornaDataHoraAtual(){
+    var agora = new Date();
+    var localdate = agora.getDate() + "/" + (agora.getMonth()+1) + "/" + agora.getFullYear() + " " + agora.getHours() + ":" + agora.getMinutes();
+    return localdate;
+}
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 /* ------- Email Rodapé ------- */
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 

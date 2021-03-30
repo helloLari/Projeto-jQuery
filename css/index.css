@@ -1,3 +1,10 @@
+#banner {
+  height: 50vh;
+  background-image: url(../img/banner-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #accordion-container {
   width: 90%;
   max-width: 1500px;
