@@ -30,9 +30,19 @@ function trocarFonte(){
 }
 
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
-/* ------- Email Rodapé ------- */
+/* ----------- Menu ----------- */
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 
+$(function () {
+    $("#menu").hide();
+    $("#menu").menu(); // Requisito = UI Menu
+    $("#menu").mouseleave(() => $("#menu").slideUp(250)); // Requisito = Slide
+    $(".fa-bars").click(() => $("#menu").slideToggle(250)); // Requisito = Click
+});
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ------- Email Rodapé ------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 
 function validacaoEmail(field) {
 

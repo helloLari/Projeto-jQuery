@@ -47,10 +47,6 @@ header {
   height: 80px;
 }
 
-/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
-/* ------------ Menu ---------- */
-/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
-
 #header-icones {
   display: flex;
 }
@@ -64,6 +60,33 @@ header {
 #header-icones i:hover {
   color: var(--cor-texto-clara);
   cursor: pointer;
+}
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ------------ Menu ---------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
+#menu-icone {
+  position: relative;
+}
+
+#menu {
+  position: absolute;
+  right: 0;
+  top: 82px;
+  width: 22ch;
+  line-height: 40px;
+}
+
+#menu li {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#menu li a {
+  margin-left: -8px;
+  padding: 20px 200px 20px 15px;
+  text-decoration: none;
 }
 
 main {
