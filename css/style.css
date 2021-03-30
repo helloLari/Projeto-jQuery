@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 header {
   height: 80px;
   background-color: #44b6b3;
@@ -21,13 +27,23 @@ header {
 }
 
 main {
-  min-height: calc(100vh - 405px);
+  min-height: calc(100vh - 290px - 80px);
   background-color: whitesmoke;
 }
 
 footer {
-  min-height: 325px;
+  min-height: 290px;
   background-color: #92d6d3;
+}
+
+#footer-contato {
+  text-align: center;
+  margin-top: 25px;
+}
+
+#footer-contato p {
+  font-variant: small-caps;
+  font-weight: 500;
 }
 
 #footer-container {
@@ -51,20 +67,21 @@ footer {
   color: rgb(36, 36, 36);
   padding: 0.5em 0.6em;
   border-radius: 6px;
+  width: 250px;
 }
 
 #contato-email button {
   font-variant: small-caps;
-  font-weight: 400;
-  border: 2px solid var(--cor-texto-escura);
+  font-weight: 500;
+  border: none;
   background: #57c0bc;
   color: #0f5754;
   outline: none;
-  margin-left: 25px;
+  margin-left: -25px;
   border-radius: 8px;
   border-style: none;
   padding: 0.5em 0.6em;
-  width: 150px;
+  width: 120px;
 }
 
 #contato-email button:hover {
@@ -76,4 +93,29 @@ footer {
 
 #contato-email button:active {
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.564);
+}
+
+#links-footer {
+  font-size: 40px;
+}
+
+#links-footer a {
+  text-decoration: none;
+  background-color: #92d6d3;
+  color: #0f5754;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+#links-footer a:hover {
+  text-decoration: none;
+  color: #92d6d3;
+  background-color: #0f5754;
+  border-radius: 50%;
+}
+
+#links-footer i {
+  padding: 5px;
+  text-align: center;
+  width: 50px;
 }
