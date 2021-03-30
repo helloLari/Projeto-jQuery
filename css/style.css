@@ -76,6 +76,7 @@ header {
   top: 82px;
   width: 22ch;
   line-height: 40px;
+  z-index: 10;
 }
 
 #menu li {
