@@ -8,8 +8,6 @@ $(function () {
 });
 
 function verificaInputs(input) {
-    console.log(input.id);
-    console.log(inputsContados);
     if (input.value == "") {
         if (inputsContados.includes(input.id)) {
             let index = inputsContados.indexOf(input.id);
@@ -29,6 +27,22 @@ function verificaInputs(input) {
     progressbar.progressbar("option", {
         value: contador,
     });
+}
+
+//Calculo IMC
+var imc = 0;
+
+function calculoImc() {
+    let peso = $("#peso")[0].value;
+    let altura = $("#altura")[0].value;
+    if (peso != "" && altura != "") {
+        imc = peso / (altura / 100) ** 2;
+        if (imc >= 50) {
+            $("#obesidade")[0].value = "Sim";
+        } else {
+            $("#obesidade")[0].value = "Não";
+        }
+    }
 }
 
 // CONDIÇÕES
@@ -119,8 +133,6 @@ function VerificaCPF() {
 
 function blocoExibicao() {
     let nome = nomeUsuario();
-    let idade = 2021 - document.getElementById("ano").value;
-    let cpf = document.getElementById("cpf");
 
     document.getElementById(
         "confirmacaoDados"
