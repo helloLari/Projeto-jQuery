@@ -1,6 +1,19 @@
 $(function () {
     $("#accordion").accordion({ heightStyle: "content" }); // Requisito: Accordion
+    $(window).scroll(() => updateAltura()); // Requisito: Scroll
+    $("#subir-float").toggle(); // Requisito: Toggle
+    updateAltura();
 });
+
+/* Funções para aparecer o atalho de subir */
+
+function updateAltura() {
+    if ($(window).scrollTop() > 400) {
+        $("#subir-float").fadeIn(600); // Requisito: Fade
+    } else {
+        $("#subir-float").fadeOut(600);
+    }
+}
 
 /* Função construtora barra círculo */
 

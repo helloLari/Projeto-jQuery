@@ -1,28 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300&display=swap");
 
 body {
-  font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .fonte-normal {
-  font-size: 1.1em;
+    font-size: 1.1em;
 }
 
 .fonte-grande {
-  font-size: 1.3em;
+    font-size: 1.3em;
 }
 
 :root {
-  --cor-fundo-XXclara: #f2fdfd;
-  --cor-fundo-Xclara: #dbf6f5;
-  --cor-fundo-clara: #b3e6e3;
-  --cor-fundo-medio: #92d6d3;
-  --cor-fundo-Xmedio: #57c0bc;
-  --cor-fundo-escuro: #44b6b3;
-  --cor-fundo-Xescuro: #216b69;
-  --cor-texto-clara: #f1f1f1;
-  --cor-texto-escura: #083d3b;
-  --cor-texto-Xescura: #252525;
+    --cor-fundo-XXclara: #f2fdfd;
+    --cor-fundo-Xclara: #dbf6f5;
+    --cor-fundo-clara: #b3e6e3;
+    --cor-fundo-medio: #92d6d3;
+    --cor-fundo-Xmedio: #57c0bc;
+    --cor-fundo-escuro: #44b6b3;
+    --cor-fundo-Xescuro: #216b69;
+    --cor-texto-clara: #f1f1f1;
+    --cor-texto-escura: #083d3b;
+    --cor-texto-Xescura: #252525;
+    --cor-extra-azul-C: #00c3ff;
+    --cor-extra-azul-E: #004aad;
 }
 
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
@@ -30,36 +32,36 @@ body {
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 
 header {
-  height: 80px;
-  background-color: var(--cor-fundo-escuro);
-  line-height: 80px;
+    height: 80px;
+    background-color: var(--cor-fundo-escuro);
+    line-height: 80px;
 }
 
 #header-container {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 1500px;
-  margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
 }
 
 #header-logo-cont img {
-  height: 80px;
+    height: 80px;
 }
 
 #header-icones {
-  display: flex;
+    display: flex;
 }
 #header-icones i {
-  color: var(--cor-texto-escura);
-  padding: 23px 5px 23px;
-  margin: 0 0 0 15px;
-  font-size: 30px;
+    color: var(--cor-texto-escura);
+    padding: 23px 5px 23px;
+    margin: 0 0 0 15px;
+    font-size: 30px;
 }
 
 #header-icones i:hover {
-  color: var(--cor-texto-clara);
-  cursor: pointer;
+    color: var(--cor-texto-clara);
+    cursor: pointer;
 }
 
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
@@ -67,32 +69,32 @@ header {
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 
 #menu-icone {
-  position: relative;
+    position: relative;
 }
 
 #menu {
-  position: absolute;
-  right: 0;
-  top: 82px;
-  width: 22ch;
-  line-height: 40px;
-  z-index: 10;
+    position: absolute;
+    right: 0;
+    top: 82px;
+    width: 22ch;
+    line-height: 40px;
+    z-index: 10;
 }
 
 #menu li {
-  overflow: hidden;
-  white-space: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 #menu li a {
-  margin-left: -8px;
-  padding: 20px 200px 20px 15px;
-  text-decoration: none;
+    margin-left: -8px;
+    padding: 20px 200px 20px 15px;
+    text-decoration: none;
 }
 
 main {
-  min-height: calc(100vh - 310px - 80px);
-  background-color: whitesmoke;
+    min-height: calc(100vh - 310px - 80px);
+    background-color: whitesmoke;
 }
 
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
@@ -100,91 +102,91 @@ main {
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 
 footer {
-  min-height: 310px;
-  background-color: var(--cor-fundo-medio);
-  color: var(--cor-texto-escura);
+    min-height: 310px;
+    background-color: var(--cor-fundo-medio);
+    color: var(--cor-texto-escura);
 }
 
 #footer-contato {
-  text-align: center;
-  margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 #footer-contato p {
-  font-variant: small-caps;
-  font-weight: 500;
+    font-variant: small-caps;
+    font-weight: 500;
 }
 
 #footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  max-width: 1500px;
-  margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
 }
 
 #contato-email {
-  text-align: center;
-  margin: 35px 0 15px;
+    text-align: center;
+    margin: 35px 0 15px;
 }
 
 #email {
-  background-color: rgba(255, 255, 255, 0.746);
-  border: none;
-  color: var(--cor-texto-escura);
-  padding: 0.5em 0.6em;
-  border-radius: 6px;
-  width: 250px;
-  padding-right: 30px;
+    background-color: rgba(255, 255, 255, 0.746);
+    border: none;
+    color: var(--cor-texto-escura);
+    padding: 0.5em 0.6em;
+    border-radius: 6px;
+    width: 250px;
+    padding-right: 30px;
 }
 
 #contato-email button {
-  font-variant: small-caps;
-  font-weight: 500;
-  border: none;
-  background: var(--cor-fundo-escuro);
-  color: var(--cor-texto-escura);
-  outline: none;
-  margin-left: -20px;
-  border-radius: 8px;
-  border-style: none;
-  padding: 0.5em 0.6em;
-  width: 135px;
+    font-variant: small-caps;
+    font-weight: 500;
+    border: none;
+    background: var(--cor-fundo-escuro);
+    color: var(--cor-texto-escura);
+    outline: none;
+    margin-left: -20px;
+    border-radius: 8px;
+    border-style: none;
+    padding: 0.5em 0.6em;
+    width: 135px;
 }
 
 #contato-email button:hover {
-  background-color: var(--cor-fundo-Xescuro);
-  color: white;
-  border: 2px;
+    background-color: var(--cor-fundo-Xescuro);
+    color: white;
+    border: 2px;
 }
 
 #contato-email button:active {
-  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.564);
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.564);
 }
 
 #links-footer {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 #links-footer a {
-  text-decoration: none;
-  background-color: var(--cor-fundo-medio);
-  color: var(--cor-texto-escura);
-  border-radius: 50%;
-  transition: 0.5s;
+    text-decoration: none;
+    background-color: var(--cor-fundo-medio);
+    color: var(--cor-texto-escura);
+    border-radius: 50%;
+    transition: 0.5s;
 }
 
 #links-footer a:hover {
-  text-decoration: none;
-  color: var(--cor-fundo-medio);
-  background-color: var(--cor-texto-escura);
-  border-radius: 50%;
+    text-decoration: none;
+    color: var(--cor-fundo-medio);
+    background-color: var(--cor-texto-escura);
+    border-radius: 50%;
 }
 
 #links-footer i {
-  padding: 5px;
-  text-align: center;
-  width: 50px;
+    padding: 5px;
+    text-align: center;
+    width: 50px;
 }
