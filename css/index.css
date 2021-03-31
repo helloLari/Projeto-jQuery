@@ -120,12 +120,12 @@ h1 {
 #eficacia-container {
     display: grid;
     grid-template-columns: 380px 1fr;
-    min-height: 800px;
+    min-height: 600px;
 }
 
 #eficacia-image img {
     width: 350px;
-    margin: -200px auto;
+    margin: -170px auto;
 }
 
 #eficacia-info h2 {
@@ -142,10 +142,10 @@ h1 {
 
 .eficacia-card {
     background-color: var(--cor-fundo-Xclara);
-    width: 200px;
+    width: 220px;
     padding: 0 10px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 10px 10px 35px;
 }
 
 .eficacia-card img {
@@ -201,4 +201,29 @@ h1 {
     position: absolute;
     top: 85px;
     translate: 0 -50%;
+}
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* -------- Perguntas --------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
+#perguntas-fundo {
+    background-color: var(--cor-fundo-Xclara);
+}
+
+#perguntas-fundo h2 {
+    color: #00c3ff;
+    font-size: 3em;
+    margin: 20px 0 0;
+    text-align: center;
+    margin: 5px 0 25px;
+}
+
+#perguntas-fundo ul {
+    margin-top: -5px;
+}
+
+#perguntas-fundo li {
+    text-align: justify;
+    margin: 0 0 1ch -2ch;
 }
