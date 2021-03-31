@@ -90,3 +90,23 @@
     top: 85px;
     translate: 0 -50%;
 }
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ---------- Tabela----------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
+#tabela-container {
+    background-color: var(--cor-fundo-Xclara);
+    text-align: center;
+}
+
+#tabela {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.alerta2,
+.alerta3,
+.alerta4 {
+    display: none;
+}

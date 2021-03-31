@@ -69,25 +69,37 @@
                             <div class="anel-container">
                                 <div class="anel-porcentagem">
                                     <progress-ring stroke="13" radius="100" progress="100" cor="white"></progress-ring>
-                                    <progress-ring stroke="13" radius="100" progress="50" cor="#44b6b3"></progress-ring>
+                                    <progress-ring stroke="13" radius="100" progress="86" cor="red"></progress-ring>
                                     <strong class="anel-edit" contenteditable="true" oninput="limite(this)"
-                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">50%</strong>
+                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">86%</strong>
                                 </div>
                             </div>
                             <h4>Ocupação UTI</h4>
+                            <ul>
+                                <li><b>Acima de 80%</b>: Alerta 1</li>
+                                <li><b>De 70% a 80%</b>: Alerta 2</li>
+                                <li><b>de 60% a 70%</b>: Alerta 3</li>
+                                <li><b>Menos de 60%</b>: Alerta 4</li>
+                            </ul>
                         </div>
                         <div class="alerta-card">
                             <div class="anel-container">
                                 <div class="anel-porcentagem">
                                     <progress-ring stroke="13" radius="100" progress="100" cor="white">
                                     </progress-ring>
-                                    <progress-ring stroke="13" radius="100" progress="82" cor="#44b6b3">
+                                    <progress-ring stroke="13" radius="100" progress="76" cor="orange">
                                     </progress-ring>
                                     <strong class="anel-edit" contenteditable="true" oninput="limite(this)"
-                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">82%</strong>
+                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">76%</strong>
                                 </div>
                             </div>
-                            <h4>Ocupação Enfermaria</h4>
+                            <h4>Uso de Enfermaria</h4>
+                            <ul>
+                                <li><b>Acima de 80%</b>: Alerta 1</li>
+                                <li><b>De 70% a 80%</b>: Alerta 2</li>
+                                <li><b>de 60% a 70%</b>: Alerta 3</li>
+                                <li><b>Menos de 60%</b>: Alerta 4</li>
+                            </ul>
                         </div>
                         <div class="alerta-card">
                             <div class="anel-container">
@@ -100,10 +112,89 @@
                                 </div>
                             </div>
                             <h4>Fase de Alerta</h4>
+                            <ul>
+                                <li><b>Alerta 1</b>: Alerta Máximo</li>
+                                <li><b>Alerta 2</b>: Controle</li>
+                                <li><b>Alerta 3</b>: Flexibilização</li>
+                                <li><b>Alerta 4</b>: Abertura Parcial</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div id="tabela-container">
+            <h2>Tabela de restrições</h2>
+            <div id="tabela">
+                <div>Espaços Públicos</div>
+                <div class="alerta1">Fechado</div>
+                <div class="alerta2">Fechado</div>
+                <div class="alerta3">Fechado</div>
+                <div class="alerta4">Fechado</div>
+                <div>Atividades Imobiliárias</div>
+                <div class="alerta1">Fechado</div>
+                <div class="alerta2">Aberto com Restrições</div>
+                <div class="alerta3">Aberto</div>
+                <div class="alerta4">Aberto</div>
+                <div>Concessionarias</div>
+                <div class="alerta1">Fechado</div>
+                <div class="alerta2">Aberto com Restrições</div>
+                <div class="alerta3">Aberto</div>
+                <div class="alerta4">Aberto</div>
+                <div>Escritórios</div>
+                <div class="alerta1">Fechado</div>
+                <div class="alerta2">Aberto com Restrições</div>
+                <div class="alerta3">Aberto</div>
+                <div class="alerta4">Aberto</div>
+                <div>Bares, Restaurantes e Similares</div>
+                <div class="alerta1">Fechado</div>
+                <div class="alerta2">Fechado</div>
+                <div class="alerta3">Aberto com Restrições</div>
+                <div class="alerta4">Aberto com Restrições</div>
+                <div>Comércio</div>
+                <div class="alerta1">Fechado</div>
+                <div class="alerta2">Aberto com Restrições</div>
+                <div class="alerta3">Aberto com Restrições</div>
+                <div class="alerta4">Aberto com Restrições</div>
+                <div>Shopping Center</div>
+                <div class="alerta1">Fechado</div>
+                <div class="alerta2">Aberto com Restrições</div>
+                <div class="alerta3">Aberto com Restrições</div>
+                <div class="alerta4">Aberto com Restrições</div>
+                <div>Salão de Beleza</div>
+                <div class="alerta1">Fechado</div>
+                <div class="alerta2">Fechado</div>
+                <div class="alerta3">Aberto com Restrições</div>
+                <div class="alerta4">Aberto com Restrições</div>
+                <div>Academia</div>
+                <div class="alerta1">Fechado</div>
+                <div class="alerta2">Fechado</div>
+                <div class="alerta3">Fechado></div>
+                <div class="alerta4">Aberto com Restrições</div>
+                <div>Teatro, Cinemas</div>
+                <div class="alerta1">Fechado</div>
+                <div class="alerta2">Fechado</div>
+                <div class="alerta3">Fechado</div>
+                <div class="alerta4">Fechado</div>
+                <div>Eventos com Aglomeração</div>
+                <div class="alerta1">Fechado</div>
+                <div class="alerta2">Fechado</div>
+                <div class="alerta3">Fechado</div>
+                <div class="alerta4">Fechado</div>
+                <div>Educação</div>
+                <div class="alerta1">A ser definido</div>
+                <div class="alerta2">A ser definido</div>
+                <div class="alerta3">A ser definido</div>
+                <div class="alerta4">A ser definido</div>
+                <div>Transporte</div>
+                <div class="alerta1">A ser definido</div>
+                <div class="alerta2">A ser definido</div>
+                <div class="alerta3">A ser definido</div>
+                <div class="alerta4">A ser definido</div>
+            </div>
+
+
         </div>
 
 

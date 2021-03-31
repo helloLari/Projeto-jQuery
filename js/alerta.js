@@ -53,6 +53,25 @@ function atualizarAlerta() {
             break;
     }
     $("#alerta-nivel").prev().attr("cor", cor);
+    atualizarTabela(cor);
+}
+
+function atualizarTabela(alerta) {
+    $(".alerta1, .alerta2, .alerta3, .alerta4").hide();
+    switch (alerta) {
+        case "red":
+            $(".alerta1").show();
+            break;
+        case "orange":
+            $(".alerta2").show();
+            break;
+        case "yellow":
+            $(".alerta3").show();
+            break;
+        case "green":
+            $(".alerta4").show();
+            break;
+    }
 }
 
 function descobrirCor(numero) {
