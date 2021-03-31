@@ -1,5 +1,5 @@
 $(function () {
-    $("#accordion").accordion(); // Requisito: Accordion
+    $("#accordion").accordion({ heightStyle: "content" }); // Requisito: Accordion
 });
 
 /* Função construtora barra círculo */

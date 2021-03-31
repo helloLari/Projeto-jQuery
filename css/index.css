@@ -119,7 +119,7 @@ h1 {
 
 #eficacia-container {
     display: grid;
-    grid-template-columns: 380px 1fr;
+    grid-template-columns: 300px 1fr;
     min-height: 600px;
 }
 
@@ -206,6 +206,10 @@ h1 {
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 /* -------- Perguntas --------- */
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
+#accordion {
+    margin-bottom: 35px;
+}
 
 #perguntas-fundo {
     background-color: var(--cor-fundo-Xclara);
