@@ -1,15 +1,27 @@
 //BARRA DE CARREGAMENTO
 
-var contador = 0;
-$("#progressbar").progressbar({
-    value: false,
+var contador = 1;
+let inputsContados = [];
+
+$(function () {
+    $("#progressbar").progressbar({ value: 0 });
 });
 
 function verificaInputs(input) {
+    console.log(input.id);
+    console.log(inputsContados);
     if (input.value == "") {
-        return;
+        if (inputsContados.includes(input.id)) {
+            let index = inputsContados.indexOf(input.id);
+            inputsContados.splice(index, 1);
+            contador -= 9;
+        }
     } else {
-        contador += 10;
+        if (inputsContados.includes(input.id)) {
+            return;
+        }
+        inputsContados.push(input.id);
+        contador += 9;
     }
     (progressbar = $("#progressbar")),
         (progressbarValue = progressbar.find(".ui-progressbar-value"));
@@ -52,7 +64,7 @@ function validaAno(ano) {
         // calculo da idade
         document.getElementById("ano").style.background = "#f6cacc"; // se for mais de 130 anos ou numero negativo o fundo fica vermelho pois está errado
     } else {
-        document.getElementById("ano").style.background = "#f2fdfd";
+        document.getElementById("ano").style.background = "#DBF6F5";
     }
 }
 
@@ -101,7 +113,7 @@ function VerificaCPF() {
         document.getElementById("cpf").style.background = "#f6cacc"; // alterar background
         return false;
     }
-    document.getElementById("cpf").style.background = "#f2fdfd";
+    document.getElementById("cpf").style.background = "#DBF6F5";
     return true;
 }
 

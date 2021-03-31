@@ -132,15 +132,16 @@
                         <!--seção do cpf-->
                         <section id="sec_cpf">
                             <label for="inputCpf">CPF:</label><br>
-                            <input onblur="verificaInputs(this)" type="number" id="cpf" placeholder="XXX.XXX.XXX-XX"
-                                class="resposta" onblur="VerificaCPF()">
+                            <input onblur="verificaInputs(this), VerificaCPF()" type="number" id="cpf"
+                                onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                placeholder="XXXXXXXXXXX" class="resposta">
                         </section>
 
                         <!--seção do sexo-->
                         <section id="sec_sexo">
                             <label for="inputSexo">Sexo:</label> <br>
-                            <select onblur="verificaInputs(this)" name="sexo" id="sexo" class="resposta"
-                                oninput="VerificaSexo()">
+                            <select onblur="verificaInputs(this), VerificaSexo()" name="sexo" id="sexo"
+                                class="resposta">
                                 <option value="vazio">-</option>
                                 <option value="feminino">Feminino</option>
                                 <option value="masculino">Masculino</option>
@@ -165,15 +166,16 @@
                         <section id="sec_profissao">
                             <label for="inputProfissao">Profissão:</label><br>
                             <select onblur="verificaInputs(this)" name="profissao" id="profissao" class="resposta">
-                                <option value="">médico</option>
-                                <option value="">enfermeiro</option>
-                                <option value="">fisioterapeuta</option>
-                                <option value="">recepcionista</option>
-                                <option value="">segurança</option>
-                                <option value="">motorista</option>
-                                <option value="">cuidadores de idosos </option>
-                                <option value="">doulas/parteiras</option>
-                                <option value="">assistentes sociais</option>
+                                <option value="médico">Médico</option>
+                                <option value="enfermeiro">Enfermeiro</option>
+                                <option value="fisioterapeuta">Fisioterapeuta</option>
+                                <option value="recepcionista">Recepcionista</option>
+                                <option value="segurança">Segurança</option>
+                                <option value="motorista">Motorista</option>
+                                <option value="cuidadores">Cuidadores de Idosos </option>
+                                <option value="doulas">Doulas/Parteiras</option>
+                                <option value="assistentes">Assistentes Sociais</option>
+                                <option value="assistentes">Outros</option>
                             </select>
                         </section>
 
