@@ -59,6 +59,7 @@
     </header>
     <main>
         <div id="banner"></div>
+
         <div id="prevencao-fundo">
             <div id="prevencao-container" class="container">
                 <div id="prevencao">
@@ -97,6 +98,7 @@
                 </div>
             </div>
         </div>
+
         <div id="vacina-fundo">
             <div id="vacina-container" class="container">
                 <div id="vacina-info">
@@ -126,7 +128,13 @@
                     <h2>Prazos e Eficácia</h2>
                     <div id="eficacia-card-cont">
                         <div class="eficacia-card">
-                            <img src="img/porc-1.png" alt="Porcentagem da vacina">
+                            <div class="anel-container">
+                                <div class="anel-porcentagem">
+                                    <progress-ring stroke="13" radius="100" progress="100" cor="white"></progress-ring>
+                                    <progress-ring stroke="13" radius="100" progress="50" cor="#44b6b3"></progress-ring>
+                                    <strong>50,4%</strong>
+                                </div>
+                            </div>
                             <h4>Coronavac</h4>
                             <ul>
                                 <li><b>Intervalo entre as doses</b>: 2 a 4 Semanas</li>
@@ -135,8 +143,14 @@
                             </ul>
                         </div>
                         <div class="eficacia-card">
-                            <img src="img/porc-2.png" alt="Porcentagem da vacina">
-                            <h4>Coronavac</h4>
+                            <div class="anel-container">
+                                <div class="anel-porcentagem">
+                                    <progress-ring stroke="13" radius="100" progress="100" cor="white"></progress-ring>
+                                    <progress-ring stroke="13" radius="100" progress="82" cor="#44b6b3"></progress-ring>
+                                    <strong>82%</strong>
+                                </div>
+                            </div>
+                            <h4>AstraZeneca</h4>
                             <ul>
                                 <li><b>Intervalo entre as doses</b>: 12 Semanas</li>
                                 <li><b>Eficácia após uma dose</b>: 76%</li>
@@ -144,8 +158,14 @@
                             </ul>
                         </div>
                         <div class="eficacia-card">
-                            <img src="img/porc-3.png" alt="Porcentagem da vacina">
-                            <h4>Coronavac</h4>
+                            <div class="anel-container">
+                                <div class="anel-porcentagem">
+                                    <progress-ring stroke="13" radius="100" progress="100" cor="white"></progress-ring>
+                                    <progress-ring stroke="13" radius="100" progress="95" cor="#44b6b3"></progress-ring>
+                                    <strong>95%</strong>
+                                </div>
+                            </div>
+                            <h4>Pfizer</h4>
                             <ul>
                                 <li><b>Intervalo entre as doses</b>: 21 dias</li>
                                 <li><b>Eficácia após uma dose</b>: 80%</li>
@@ -156,7 +176,6 @@
                 </div>
             </div>
         </div>
-
 
         <div id="accordion-fundo">
             <div class="container">

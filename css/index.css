@@ -11,152 +11,194 @@
 --cor-texto-Xescura: #252525;
 */
 
-/* Banner */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ---------- Banner ---------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 
 #banner {
-  height: 50vh;
-  background-image: url(../img/banner-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+    height: 50vh;
+    background-image: url(../img/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/* Info */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ----------- Info ----------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 
 h1 {
-  font-variant: small-caps;
-  font-size: 1.8em;
+    font-variant: small-caps;
+    font-size: 1.8em;
 }
 
 .container {
-  width: 90%;
-  max-width: 1500px;
-  margin: auto;
-  padding: 10px 0;
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 10px 0;
 }
 
 #prevencao-fundo {
-  background-color: var(--cor-fundo-XXclara);
+    background-color: var(--cor-fundo-XXclara);
 }
 
 #prevencao {
-  color: var(--cor-texto-escura);
-  text-align: center;
-  padding-bottom: 150px;
+    color: var(--cor-texto-escura);
+    text-align: center;
+    padding-bottom: 150px;
 }
 
 #prevencao-cards {
-  max-width: 900px;
-  display: inline-flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+    max-width: 900px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .info-card {
-  background-color: var(--cor-fundo-Xclara);
-  width: 260px;
-  padding: 0 10px;
-  border-radius: 10px;
-  margin-bottom: 15px;
+    background-color: var(--cor-fundo-Xclara);
+    width: 260px;
+    padding: 0 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .info-card p {
-  margin: -10px 0 20px 0;
+    margin: -10px 0 20px 0;
 }
 
-/* Vacinas */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ---------- Vacinas --------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 
 #vacina-fundo {
-  background-color: var(--cor-fundo-Xclara);
+    background-color: var(--cor-fundo-Xclara);
 }
 
 #vacina-container {
-  display: grid;
-  grid-template-columns: 1fr 380px;
-  min-height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    min-height: 800px;
 }
 
 #vacina-info h2 {
-  color: #00c3ff;
-  font-size: 3em;
-  margin: 20px 0 0;
+    color: #00c3ff;
+    font-size: 3em;
+    margin: 20px 0 0;
 }
 
 #vacina-info h3 {
-  font-size: 2em;
-  font-weight: 500;
-  line-height: 1.2em;
-  width: 50%;
-  margin: 0;
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 1.2em;
+    width: 50%;
+    margin: 0;
 }
 
 #vacina-info p {
-  text-align: justify;
-  max-width: 860px;
+    text-align: justify;
+    max-width: 860px;
 }
 
 #vacina-info p:nth-of-type(2) {
-  margin-bottom: 160px;
+    margin-bottom: 160px;
 }
 
 #vacina-image img {
-  width: 350px;
-  margin: -200px auto;
+    width: 350px;
+    margin: -200px auto;
 }
 
-/* Eficácia */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* --------- Eficácia --------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 
 #eficacia-fundo {
-  background-color: var(--cor-fundo-XXclara);
+    background-color: var(--cor-fundo-XXclara);
 }
 
 #eficacia-container {
-  display: grid;
-  grid-template-columns: 380px 1fr;
-  min-height: 800px;
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    min-height: 800px;
 }
 
 #eficacia-image img {
-  width: 350px;
-  margin: -200px auto;
+    width: 350px;
+    margin: -200px auto;
 }
 
 #eficacia-info h2 {
-  color: #00c3ff;
-  font-size: 3em;
-  margin: 20px 0 0;
-  text-align: center;
+    color: #00c3ff;
+    font-size: 3em;
+    margin: 20px 0 0;
+    text-align: center;
 }
 
 #eficacia-card-cont {
-  display: flex;
-  justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .eficacia-card {
-  background-color: var(--cor-fundo-Xclara);
-  width: 200px;
-  padding: 0 10px;
-  border-radius: 10px;
-  margin: 10px;
+    background-color: var(--cor-fundo-Xclara);
+    width: 200px;
+    padding: 0 10px;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 .eficacia-card img {
-  display: block;
-  width: 100%;
-  margin: 10px auto -10px;
+    display: block;
+    width: 100%;
+    margin: 10px auto -10px;
 }
 
 .eficacia-card h4 {
-  text-align: center;
-  background-color: var(--cor-fundo-Xescuro);
-  color: var(--cor-texto-clara);
+    margin-top: 15px;
+    text-align: center;
+    background-color: var(--cor-fundo-Xescuro);
+    color: var(--cor-texto-clara);
 }
 
 .eficacia-card ul {
-  list-style: none;
+    list-style: none;
 }
 .eficacia-card ul li {
-  margin-left: -33px;
-  font-size: 0.8em;
-  padding-bottom: 10px;
+    margin-left: -33px;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+}
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ---------- Anel% ----------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
+.anel-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.anel-porcentagem {
+    display: flex;
+    justify-content: center;
+    background-color: #004aad;
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+    position: relative;
+}
+
+.anel-porcentagem progress-ring {
+    margin: -15px 0 0 0;
+    position: absolute;
+}
+
+.anel-porcentagem strong {
+    font-size: 35px;
+    color: var(--cor-texto-clara);
+    position: absolute;
+    top: 85px;
+    translate: 0 -50%;
 }
