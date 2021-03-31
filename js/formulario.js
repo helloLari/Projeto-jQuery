@@ -145,6 +145,21 @@ function blocoExibicao() {
     // Testa a profissão
     if (!$("#profissao")[0][9].selected) vacinar = true;
     // Testa Gestante
+    if ($("#gestante")[0][1].selected) vacinar = true;
 
-    alert(vacinar);
+    //Mostra a mensagem pro usuário
+    $("#resultado-cadastro").show();
+    if (vacinar) {
+        $("#resultado-cadastro p").text(
+            `Olá ${
+                $("#nome")[0].value
+            }, você já se enquadra nos grupos que estão sendo vacinados. Em breve entraremos em contrato para agendar seu horário.`
+        );
+    } else {
+        $("#resultado-cadastro p").text(
+            `Olá ${
+                $("#nome")[0].value
+            }, você ainda não se enquadra nos grupos que estão sendo vacinados. Aguarde a sua vez.`
+        );
+    }
 }

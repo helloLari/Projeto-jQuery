@@ -22,11 +22,49 @@ function fimEdit(elem) {
     if (elem.innerHTML == "") elem.innerHTML = 0;
     if (elem.innerHTML > 100) {
         $(anel).attr("progress", 100);
+        $(anel).attr("cor", "red");
     } else {
         $(anel).attr("progress", elem.innerHTML);
+        $(anel).attr("cor", descobrirCor(elem.innerHTML));
     }
+    // Coloca o %
     if (elem.innerHTML.endsWith("%")) return;
     elem.innerHTML += "%";
+    atualizarAlerta();
+}
+
+function atualizarAlerta() {
+    let numEnfermaria = $(".anel-edit")[0].innerHTML.slice(0, -1);
+    let numUti = $(".anel-edit")[1].innerHTML.slice(0, -1);
+    let maior = Math.max(numEnfermaria, numUti);
+    let cor = descobrirCor(maior);
+    switch (cor) {
+        case "red":
+            $("#alerta-nivel").text(1);
+            break;
+        case "orange":
+            $("#alerta-nivel").text(2);
+            break;
+        case "yellow":
+            $("#alerta-nivel").text(3);
+            break;
+        case "green":
+            $("#alerta-nivel").text(4);
+            break;
+    }
+    $("#alerta-nivel").prev().attr("cor", cor);
+}
+
+function descobrirCor(numero) {
+    if (numero >= 90) {
+        return "red";
+    } else if (numero >= 80) {
+        return "orange";
+    } else if (numero >= 70) {
+        return "yellow";
+    } else {
+        return "green";
+    }
 }
 
 /* Função construtora barra círculo */

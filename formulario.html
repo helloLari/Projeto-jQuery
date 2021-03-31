@@ -106,7 +106,6 @@
                             </select>
                         </section>
 
-
                         <!--seção do ano-->
                         <section id="sec_ano">
                             <label for="inputAno">Ano</label> <br>
@@ -118,12 +117,14 @@
                         <section id="sec_etnia">
                             <label for="inputEtnia">Etnia</label> <br>
                             <select onblur="verificaInputs(this)" name="etnia" id="etnia" class="resposta">
-                                <option value="01">Branco</option>
-                                <option value="02">Preto</option>
-                                <option value="03">Não informado</option>
+                                <option value="01">Branca</option>
+                                <option value="02">Preta</option>
+                                <option value="03">Parda</option>
+                                <option value="04">Amarela</option>
+                                <option value="05">Indígena</option>
+                                <option value="06">Não informado</option>
                             </select>
                         </section>
-
                     </section>
 
                     <!--seção com sexo gestante e CPF-->
@@ -140,8 +141,8 @@
                         <!--seção do sexo-->
                         <section id="sec_sexo">
                             <label for="inputSexo">Sexo:</label> <br>
-                            <select onblur="verificaInputs(this), VerificaSexo()" name="sexo" id="sexo"
-                                class="resposta">
+                            <select onblur="verificaInputs(this), VerificaSexo()" oninput="VerificaSexo()" name="sexo"
+                                id="sexo" class="resposta">
                                 <option value="vazio">-</option>
                                 <option value="feminino">Feminino</option>
                                 <option value="masculino">Masculino</option>
@@ -152,9 +153,9 @@
                         <!--seção da gestante-->
                         <section id="sec_gestante" style="display: none;">
                             <label for="inputGestante">Gestante</label> <br>
-                            <select onblur="verificaInputs(this)" name="Gestante" id="gestante" class="resposta">
-                                <option value=""=>Sim</option>
-                                <option value="">Não</option>
+                            <select name="gestante" id="gestante" class="resposta">
+                                <option value="Não">Não</option>
+                                <option value="Sim">Sim</option>
                             </select>
                         </section>
                     </section>
@@ -323,6 +324,10 @@
                 </section>
             </div>
             <div id="form-img"></div>
+        </div>
+
+        <div id="resultado-cadastro">
+            <p></p>
         </div>
 
         <div id="info">
