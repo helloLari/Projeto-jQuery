@@ -262,3 +262,65 @@ h1 {
     text-align: justify;
     margin: 0 0 1ch -2ch;
 }
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ------ Media  Queries ------ */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+@media screen and (min-width: 1650px) {
+    #vacina-info p {
+        text-align: justify;
+        max-width: 1000px;
+    }
+
+    #vacina-info p {
+        line-height: 1.65;
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    #eficacia-container {
+        grid-template-columns: 1fr;
+    }
+
+    #eficacia-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #vacina-container h3 {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    #vacina-container {
+        grid-template-columns: 1fr;
+        min-height: 0;
+    }
+
+    #vacina-info p:nth-of-type(2) {
+        margin-bottom: 20px;
+    }
+
+    #vacina-image {
+        display: none;
+    }
+
+    #prevencao {
+        padding-bottom: 0;
+    }
+
+    #eficacia-card-cont {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .eficacia-card {
+        background-color: var(--cor-fundo-Xclara);
+        width: 210px;
+        padding: 0 5px;
+    }
+}
