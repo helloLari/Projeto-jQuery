@@ -1,40 +1,37 @@
 .conteudo {
-  position: absolute;
-  width: 90%;
-  top: 100px;
-  margin-top: 5%;
+    margin: auto;
+    width: 90%;
+    padding-top: 100px;
+    max-width: 1500px;
 }
 
 .titulo {
-  font-size: 3em;
-  text-align: center;
-  color: var(--cor-fundo-escuro);
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.658);
+    font-size: 3em;
+    text-align: center;
+    color: var(--cor-fundo-escuro);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.658);
+    padding: 0;
 }
 
 #texto {
-  line-height: 1.6;
-  font-size: 1.2em;
-  text-align: justify;
-  margin-left: 10%;
+    line-height: 1.6;
+    font-size: 1.2em;
+    text-align: justify;
 }
 
 #text {
-  line-height: 1.6;
-  font-size: 1.2em;
-  padding: 5%;
-  text-align: justify;
+    line-height: 1.6;
+    font-size: 1.2em;
+    padding: 5%;
+    text-align: justify;
 }
 
 .bloco {
-  width: 902px;
-  height: 389px;
-  left: 233px;
-  background: var(--cor-fundo-medio);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 55px;
-  margin-left: 20%;
-  margin-top: 15%;
+    max-width: 902px;
+    background: var(--cor-fundo-medio);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 55px;
+    margin: 15% auto;
 }
 
 /*
@@ -42,95 +39,98 @@
   */
 
 .servicos {
-  position: absolute;
-  width: 100%;
-  top: 120%;
-  margin-top: 30%;
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    max-width: 1500px;
 }
 
 #titulo2 {
-  font-size: 3em;
-  text-align: center;
-  color: var(--cor-fundo-escuro);
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.658);
+    font-size: 3em;
+    text-align: center;
+    color: var(--cor-fundo-escuro);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.658);
 }
 
-#texto2 {
-  line-height: 1.6;
-  font-size: 1.2em;
-  text-align: center;
+#slide #texto2 {
+    line-height: 1.6;
+    font-size: 1.2em;
+    text-align: center;
 }
 
 /* Quem Somos */
 
 .quemSomos {
-  margin: 25px 0 25px 25px;
-  margin-top: 140%;
+    margin: auto;
+    width: 90%;
+    padding-top: 100px;
 }
 
 .quemSomosTitulo {
-  font-size: 3em;
-  text-align: center;
-  color: var(--cor-fundo-escuro);
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.658);
+    font-size: 3em;
+    text-align: center;
+    color: var(--cor-fundo-escuro);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.658);
 }
 
 .quemSomosDescricao {
-  margin: 30px;
-  line-height: 1.6;
-  font-size: 1.2em;
-  text-align: center;
+    margin: 30px;
+    line-height: 1.6;
+    font-size: 1.2em;
+    text-align: center;
 }
 
 .equipe {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  flex-direction: row;
-  margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 30px;
 }
 
 .pessoa {
-  width: 25%;
-  padding: 10px 10px;
-  margin-bottom: 30px;
-  background: var(--cor-fundo-Xclara);
-  border-radius: 10px;
+    width: 25%;
+    padding: 10px 10px;
+    margin: 10px 20px;
+    margin-bottom: 30px;
+    background: var(--cor-fundo-Xclara);
+    border-radius: 10px;
+    width: 260px;
 }
 
 .pessoaImagem {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 100%;
-  height: 150px;
-  margin: 0 auto;
-  width: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    height: 150px;
+    margin: 0 auto;
+    width: 150px;
 }
 
 .imagembreenda {
-  background-image: url('../img/Breenda.jpeg');
-  background-position: 70%;
+    background-image: url("../img/Breenda.jpeg");
+    background-position: 70%;
 }
 
 .imagemGiovanni {
-  background-image: url('../img/Giovanni.png');
-  background-size: 180px;
+    background-image: url("../img/Giovanni.png");
+    background-size: 180px;
 }
 
 .imagemLarisse {
-  background-image: url('../img/Larisse.jpeg');
+    background-image: url("../img/Larisse.jpeg");
 }
 
 .pessoaNome {
-  font-size: 23px;
-  background-color: var(--cor-fundo-clara);
-  margin: 1rem 0;
-  text-align: center;
+    font-size: 23px;
+    background-color: var(--cor-fundo-clara);
+    margin: 1rem 0;
+    text-align: center;
 }
 
 .pessoaDescricao {
-  padding: 15px 15px;
-  line-height: 160%;
-  text-align: center;
+    padding: 15px 15px;
+    line-height: 160%;
+    text-align: center;
 }
