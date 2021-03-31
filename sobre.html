@@ -13,6 +13,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/sanitize-full.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/sobre.css'>
+    <link rel="stylesheet" href="slide_galeria/css/craftyslide.css" />
 
     <!-- jQuery e jQuery Ui -->
     <link rel='stylesheet' type='text/css' media='screen' href='css/jquery-ui.css'>
@@ -59,6 +60,108 @@
         </div>
     </header>
     <main>
+        <!-- PÁGINA SOBRE NÓS-->
+        <div class="conteudo">
+            <h1 class="titulo">Nossa História</h1>
+            <p id="texto">Somos uma Clínica de Vacinação atuando no mercado desde 2021 com um alto padrão de
+                qualidade no atendimento e na segurança na aplicação e conservação das suas vacinas.
+                Possuímos uma equipe médica e de enfermagem fortemente qualificada e atualizada, com a experiência que
+                sua família merece e pronta para atender-los com todo cuidado e carinho.<br>
+                Nossa infraestrutura conta com Câmaras de conservação de vacinas com geradores próprios de energia
+                garantindo a manutenção ideal da temperatura e características de todos os imunobiológicos mesmo com
+                falta de energia elétrica. O sistema conta também com controle eletrônico de temperatura em tempo real,
+                associado com moderno sistema de alarme que detecta quaisquer variações de temperatura. Além disso
+                contamos com um espaço aconchegante, agradável e cheio de amor esperando por vocês.<br>
+                Na Vacina Ai você encontrará todas as vacinas necessárias para todas as faixas etárias em um ambiente
+                agradável e uma equipe acolhedora. Esperamos por você e sua família.
+            </p>
+
+            <div class="bloco">
+                <div id="text">
+                    <p>
+                        Nossa <b>missão</b> é contribuir com a saúde das pessoas, oferecendo um serviço de imunização
+                        acolhedor, com equipe
+                        qualificada e protocolos técnicos bem estabelecidos, proporcionando total segurança, confiança e
+                        um
+                        excelente atendimento.
+                        Temos como propósitos <b> Acolher, Proteger e Cuidar.</b> Ser referência de qualidade em
+                        imunização na
+                        sociedade por meio de ações que visam a promoção da saúde e melhoria da qualidade de vida das
+                        pessoas. E como <b>Valores</b> honramos a Ética, Ciência, Conhecimento técnico, Respeito, Amor e
+                        Cuidado.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="servicos">
+                <h1 id="titulo2">Serviços</h1>
+                <p id="texto2">
+                    Não deixe a prevenção para depois, proteja-se e proteja sua família️!
+                    Pensou Proteção, Pensou Vacina Ai! ❤️
+                </p>
+                <!-- slideshow-->
+                <div id="slideshow">
+                    <ul>
+                        <li>
+                            <img src="img/vacina_1.jpeg" alt="Senhora idosa sendo vacinada por enfemeira"
+                                title="Campanha Vacinação Covid-19" />
+                        </li>
+
+                        <li>
+                            <img src="img/vacina_2.jpeg" alt="Frascos contendo a vacina de combate ao covid-19"
+                                title="Campanha Vacinação Covid-19" />
+                        </li>
+
+                        <li>
+                            <img src="img/vacina_3.jpeg" alt="Primeira mulher idosa sendo vacinada na campanha"
+                                title="Campanha Vacinação Covid-19" />
+                        </li>
+
+                        <li>
+                            <img src="img/vacina_4.jpeg" alt="Médico aplicando vacina no braço de paciente"
+                                title="Campanha Vacinação Covid-19" />
+                        </li>
+
+                        <li>
+                            <img src="img/vacina_5.jpeg" alt="Médico preparando injeção para vacina"
+                                title="Campanha Vacinação Covid-19" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="quemSomos">
+            <h1 class="quemSomosTitulo">Quem somos</h1>
+            <p class="quemSomosDescricao">Conheça quem está por trás dessa iniciativa</p>
+            <div class="equipe">
+                <div class="pessoa">
+                    <div class="pessoaImagem imagembreenda"></div>
+                    <h1 class="pessoaNome">Breenda Welly</h1>
+                    <p class="pessoaDescricao">Desenvolvedora FullStack <br>Estudante SoulCode Academy</p>
+                </div>
+                <div class="pessoa">
+                    <div class="pessoaImagem imagemGiovanni"></div>
+                    <h1 class="pessoaNome">Giovanni Marcon</h1>
+
+                    <p class="pessoaDescricao">Desenvolvedor FullStack <br>Estudante SoulCode Academy</p>
+                </div>
+                <div class="pessoa">
+                    <div class="pessoaImagem imagemLarisse"></div>
+                    <h1 class="pessoaNome">Larisse Rodrigues</h1>
+
+                    <p class="pessoaDescricao">Desenvolvedora FullStack <br>Estudante SoulCode Academy</p>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        <script src="slide_galeria/js/craftyslide.js"></script>
+
+        <script>
+            $("#slideshow").craftyslide();
+        </script>
 
 
 
