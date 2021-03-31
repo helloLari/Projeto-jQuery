@@ -1,0 +1,92 @@
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* --------- Eficácia --------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
+#alerta-fundo {
+    background-color: var(--cor-fundo-XXclara);
+    padding: 10px 0;
+}
+
+#alerta-image img {
+    width: 350px;
+    margin: -170px auto;
+}
+
+#alerta-info h2 {
+    color: #00c3ff;
+    font-size: 3em;
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+#alerta-nivel {
+    font-size: 85px;
+}
+
+#alerta-card-cont {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.alerta-card {
+    background-color: var(--cor-fundo-Xclara);
+    width: 220px;
+    padding: 0 10px;
+    border-radius: 10px;
+    margin: 10px 10px 35px;
+}
+
+.alerta-card img {
+    display: block;
+    width: 100%;
+    margin: 10px auto -10px;
+}
+
+.alerta-card h4 {
+    margin-top: 15px;
+    text-align: center;
+    background-color: var(--cor-fundo-Xescuro);
+    color: var(--cor-texto-clara);
+}
+
+.alerta-card ul {
+    list-style: none;
+}
+.alerta-card ul li {
+    margin-left: -33px;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+}
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ---------- Anel% ----------- */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
+.anel-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.anel-porcentagem {
+    display: flex;
+    justify-content: center;
+    background-color: #004aad;
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+    position: relative;
+}
+
+.anel-porcentagem progress-ring {
+    margin: -15px 0 0 0;
+    position: absolute;
+}
+
+.anel-porcentagem strong {
+    font-size: 35px;
+    color: var(--cor-texto-clara);
+    position: absolute;
+    top: 85px;
+    translate: 0 -50%;
+}

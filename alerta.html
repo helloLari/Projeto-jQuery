@@ -60,6 +60,66 @@
     </header>
     <main>
 
+        <div id="alerta-fundo">
+            <div id="alerta-container" class="container">
+                <div id="alerta-info">
+                    <h2>Ocupação e alerta</h2>
+                    <div id="alerta-card-cont">
+                        <div class="alerta-card">
+                            <div class="anel-container">
+                                <div class="anel-porcentagem">
+                                    <progress-ring stroke="13" radius="100" progress="100" cor="white"></progress-ring>
+                                    <progress-ring stroke="13" radius="100" progress="50" cor="#44b6b3"></progress-ring>
+                                    <strong class="anel-edit" contenteditable="true" oninput="limite(this)"
+                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">50,4%</strong>
+                                </div>
+                            </div>
+                            <h4>UTI</h4>
+                            <ul>
+                                <li><b>Intervalo entre as doses</b>: 2 a 4 Semanas</li>
+                                <li><b>Eficácia após uma dose</b>: Indeterminada</li>
+                                <li><b>Eficácia após duas doses</b>: 50,4%</li>
+                            </ul>
+                        </div>
+                        <div class="alerta-card">
+                            <div class="anel-container">
+                                <div class="anel-porcentagem">
+                                    <progress-ring stroke="13" radius="100" progress="100" cor="white">
+                                    </progress-ring>
+                                    <progress-ring stroke="13" radius="100" progress="82" cor="#44b6b3">
+                                    </progress-ring>
+                                    <strong class="anel-edit" contenteditable="true" oninput="limite(this)"
+                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">82%</strong>
+                                </div>
+                            </div>
+                            <h4>Ambulatório</h4>
+                            <ul>
+                                <li><b>Intervalo entre as doses</b>: 12 Semanas</li>
+                                <li><b>Eficácia após uma dose</b>: 76%</li>
+                                <li><b>Eficácia após duas doses</b>: 82%</li>
+                            </ul>
+                        </div>
+                        <div class="alerta-card">
+                            <div class="anel-container">
+                                <div class="anel-porcentagem">
+                                    <progress-ring stroke="13" radius="100" progress="100" cor="white">
+                                    </progress-ring>
+                                    <progress-ring stroke="13" radius="100" progress="100" cor="red">
+                                    </progress-ring>
+                                    <strong id="alerta-nivel">1</strong>
+                                </div>
+                            </div>
+                            <h4>Pfizer</h4>
+                            <ul>
+                                <li><b>Intervalo entre as doses</b>: 21 dias</li>
+                                <li><b>Eficácia após uma dose</b>: 80%</li>
+                                <li><b>Eficácia após duas doses</b>: 95%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </main>
