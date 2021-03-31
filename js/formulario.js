@@ -132,9 +132,19 @@ function VerificaCPF() {
 }
 
 function blocoExibicao() {
-    let nome = nomeUsuario();
+    // Testa se foi completo o formulario
+    if (contador < 100) return;
+    let vacinar = false;
+    // Testa se é obeso nivel 3
+    if ($("#obesidade")[0].value == "Sim") vacinar = true;
+    // Testa outaras comorbidades
+    let comorbidades = $(".comorbidades");
+    for (let item of comorbidades) {
+        if (item.control.checked) vacinar = true;
+    }
+    // Testa a profissão
+    if (!$("#profissao")[0][9].selected) vacinar = true;
+    // Testa Gestante
 
-    document.getElementById(
-        "confirmacaoDados"
-    ).innerHTML = `Olá ${nome} , você tem ${idade} anos de idade e pode usar ${cpf.value} `;
+    alert(vacinar);
 }

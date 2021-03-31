@@ -175,7 +175,7 @@
                                 <option value="cuidadores">Cuidadores de Idosos </option>
                                 <option value="doulas">Doulas/Parteiras</option>
                                 <option value="assistentes">Assistentes Sociais</option>
-                                <option value="assistentes">Outros</option>
+                                <option value="outras">Outros</option>
                             </select>
                         </section>
 
@@ -249,68 +249,65 @@
                         <!--SESSÃO DO PESO-->
                         <section id="sec_peso">
                             <label for="inputPeso">Peso:</label><br>
-                            <input onblur="verificaInputs(this)" type="number" name="peso" id="peso" class="resposta"
-                                placeholder="Peso">
+                            <input onblur="verificaInputs(this), calculoImc()" type="number" name="peso" id="peso"
+                                class="resposta" placeholder="Peso">
                         </section>
 
                         <!--SESSÃO DA ALTURA-->
                         <section id="sec_altura">
                             <label for="inputAltura">Altura:</label><br>
-                            <input onblur="verificaInputs(this)" type="number" name="altura" id="altura"
+                            <input onblur="verificaInputs(this), calculoImc()" type="number" name="altura" id="altura"
                                 class="resposta" placeholder="Altura">
                         </section>
 
                         <!--SESSÃO DA COMORBIDADE-->
                         <section id="sec_comorbidade">
-                            <label for="inputComorbidade">Comorbidade</label><br>
-                            <select name="Comorbidade" id="comorbidade" class="resposta">
-                                <option value="">Sim</option>
-                                <option value="">Não</option>
-                            </select>
+                            <label for="inputComorbidade">Obesidade Grau III</label><br>
+                            <input readonly type="text" name="Comorbidade" id="obesidade" class="resposta">
                         </section>
                     </section>
 
                     <section id="form_seis">
                         <section id="sec_comorbidades">
                             <fieldset>
-                                <legend>Comorbidades: </legend>
+                                <legend>Outras Comorbidades: </legend>
                                 <div>
                                     <input type="checkbox" name="checkbox-1b" id="checkbox-1b">
-                                    <label class="vacina" for="checkbox-1b">Hipertensão Arterial</label>
+                                    <label class="comorbidades" for="checkbox-1b">Hipertensão Arterial</label>
                                 </div>
                                 <div>
                                     <input type="checkbox" name="checkbox-2b" id="checkbox-2b">
-                                    <label class="vacina" for="checkbox-2b">Hipertensão Resistente </label>
+                                    <label class="comorbidades" for="checkbox-2b">Hipertensão Resistente </label>
                                 </div>
                                 <div>
                                     <input type="checkbox" name="checkbox-3b" id="checkbox-3b">
-                                    <label class="vacina" for="checkbox-3b">Diabetes</label>
+                                    <label class="comorbidades" for="checkbox-3b">Diabetes</label>
                                 </div>
                                 <div>
                                     <input type="checkbox" name="checkbox-4b" id="checkbox-4b">
-                                    <label class="vacina" for="checkbox-4b">Doença Pulmonar</label> <br>
+                                    <label class="comorbidades" for="checkbox-4b">Doença Pulmonar</label> <br>
                                 </div>
 
                                 <div>
                                     <input type="checkbox" name="checkbox-5b" id="checkbox-5b">
-                                    <label class="vacina" for="checkbox-5b">Doença Cardiovascular</label>
+                                    <label class="comorbidades" for="checkbox-5b">Doença Cardiovascular</label>
                                 </div>
                                 <div>
                                     <input type="checkbox" name="checkbox-6b" id="checkbox-6b">
-                                    <label class="vacina" for="checkbox-6b">Imunossuprimido</label>
+                                    <label class="comorbidades" for="checkbox-6b">Imunossuprimido</label>
                                 </div>
                                 <div>
                                     <input type="checkbox" name="checkbox-7b" id="checkbox-7b">
-                                    <label class="vacina" for="checkbox-7">Anemia Falciforme</label>
+                                    <label class="comorbidades" for="checkbox-7b">Anemia Falciforme</label>
                                 </div>
                                 <div>
                                     <input type="checkbox" name="checkbox-8b" id="checkbox-8b">
-                                    <label class="vacina" for="checkbox-8b">Sindrome de Down</label> <br>
+                                    <label class="comorbidades" for="checkbox-8b">Sindrome de Down</label> <br>
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" name="checkbox-1" id="checkbox-1">
-                                    <label class="vacina" for="checkbox-1">Transplantados</label>
+                                    <input type="checkbox" name="checkbox-9b" id="checkbox-9b">
+                                    <label class="comorbidades" for="checkbox-9b">Transplantados</label>
                                 </div>
                             </fieldset>
                         </section>
