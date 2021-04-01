@@ -48,7 +48,7 @@ html {
 
 #banner {
     height: 50vh;
-    background-image: url(../img/banner-1.jpg);
+    background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
