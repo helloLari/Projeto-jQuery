@@ -77,8 +77,8 @@ function ad0s(num, tamanho) {
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
 
 $(function () {
-    $("#email").focus(() => tirarVermelho()); // Requisito: focus
-    $("#email").blur(() => validacaoEmail()); // Requisito: blur
+    $("#email").focus(() => tirarVermelho()); // Requisito: Focus
+    $("#email").blur(() => validacaoEmail()); // Requisito: Blur
 });
 
 function tirarVermelho() {

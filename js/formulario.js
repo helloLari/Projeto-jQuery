@@ -4,15 +4,21 @@ var contador = 1;
 let inputsContados = [];
 
 $(function () {
-    $("#progressbar").progressbar({ value: 0 });
+    $("#progressbar").progressbar({ value: 0 }); // Requisito UI : Progress Bar
 });
+
+function tirarVermelho(campo) {
+    campo.style.background = "#DBF6F5";
+}
 
 function verificaInputs(input) {
     if (input.value == "") {
+        input.style.background = "#f6cacc";
         if (inputsContados.includes(input.id)) {
             let index = inputsContados.indexOf(input.id);
             inputsContados.splice(index, 1);
             contador -= 9;
+            if (contador < 100) $("#completo").text("");
         }
     } else {
         if (inputsContados.includes(input.id)) {
@@ -20,6 +26,7 @@ function verificaInputs(input) {
         }
         inputsContados.push(input.id);
         contador += 9;
+        if (contador >= 100) $("#completo").text("OK!");
     }
     (progressbar = $("#progressbar")),
         (progressbarValue = progressbar.find(".ui-progressbar-value"));
@@ -73,10 +80,23 @@ function anoNascimento() {
 }
 //função que valida se a idade é menor que 130 e não é um numero negativo
 
+function validaDia(valor) {
+    let numero = valor.value;
+    if (numero == "") {
+        return;
+    } else if (numero > 31 || numero < 1) {
+        document.getElementById("dia").style.background = "#f6cacc";
+        alert("Dia inválido!");
+        valor.value = "";
+    }
+    document.getElementById("dia").style.background = "#DBF6F5";
+}
+
 function validaAno(ano) {
     if (ano.value <= 1890 || ano.value > 2021) {
         // calculo da idade
         document.getElementById("ano").style.background = "#f6cacc"; // se for mais de 130 anos ou numero negativo o fundo fica vermelho pois está errado
+        ano.value = "";
     } else {
         document.getElementById("ano").style.background = "#DBF6F5";
     }
@@ -146,6 +166,8 @@ function blocoExibicao() {
     if (!$("#profissao")[0][9].selected) vacinar = true;
     // Testa Gestante
     if ($("#gestante")[0][1].selected) vacinar = true;
+    // Testa Idade
+    if ($("#ano")[0].value < 1953) vacinar = true;
 
     //Mostra a mensagem pro usuário
     $("#resultado-cadastro").show();

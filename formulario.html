@@ -67,13 +67,11 @@
                 <div id="cadas">Cadastro de Vacinaçao</div>
                 <section id="dado">
 
-                    <div id="progressbar"></div>
-
                     <!--primeiro item do formulario-->
                     <section id="sec_nome">
                         <label for="inputNome">Nome</label> <br>
-                        <input onblur="verificaInputs(this)" type="text" id="nome" placeholder="Digite o seu nome"
-                            class="resposta"> <br>
+                        <input onclick="tirarVermelho(this)" onblur="verificaInputs(this)" type="text" id="nome"
+                            placeholder="Digite o seu nome" class="resposta"> <br>
                     </section>
 
                     <!--seção com data, mes, ano e etnia-->
@@ -82,8 +80,9 @@
                         <!--seção do dia-->
                         <section id="sec_dia">
                             <label for="inputDia">Dia</label><br>
-                            <input onblur="verificaInputs(this)" type="number" name="dia" id="dia" placeholder="Dia "
-                                class="resposta">
+                            <input onclick="tirarVermelho(this)" onblur="verificaInputs(this), validaDia(this)"
+                                type="number" name="dia" id="dia" placeholder="Dia " class="resposta" min="1" max="31"
+                                maxlength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                         </section>
 
                         <!--seção do mes-->
@@ -109,14 +108,16 @@
                         <!--seção do ano-->
                         <section id="sec_ano">
                             <label for="inputAno">Ano</label> <br>
-                            <input onblur="verificaInputs(this)" type="number" id="ano" placeholder="Ano"
-                                class="resposta" onblur="validaAno(this)">
+                            <input onclick="tirarVermelho(this)" onblur="verificaInputs(this), validaAno(this)"
+                                type="number" id="ano" placeholder="Ano" class="resposta" min="1891" max="2021"
+                                maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                         </section>
 
                         <!--seção da etnia-->
                         <section id="sec_etnia">
                             <label for="inputEtnia">Etnia</label> <br>
                             <select onblur="verificaInputs(this)" name="etnia" id="etnia" class="resposta">
+                                <option value="vazio">-</option>
                                 <option value="01">Branca</option>
                                 <option value="02">Preta</option>
                                 <option value="03">Parda</option>
@@ -133,7 +134,8 @@
                         <!--seção do cpf-->
                         <section id="sec_cpf">
                             <label for="inputCpf">CPF:</label><br>
-                            <input onblur="verificaInputs(this), VerificaCPF()" type="number" id="cpf"
+                            <input maxlength="11" onclick="tirarVermelho(this)"
+                                onblur="verificaInputs(this), VerificaCPF()" type="text" id="cpf"
                                 onkeypress="return event.charCode >= 48 && event.charCode <= 57"
                                 placeholder="XXXXXXXXXXX" class="resposta">
                         </section>
@@ -167,6 +169,7 @@
                         <section id="sec_profissao">
                             <label for="inputProfissao">Profissão:</label><br>
                             <select onblur="verificaInputs(this)" name="profissao" id="profissao" class="resposta">
+                                <option value="outras">-</option>
                                 <option value="médico">Médico</option>
                                 <option value="enfermeiro">Enfermeiro</option>
                                 <option value="fisioterapeuta">Fisioterapeuta</option>
@@ -183,8 +186,9 @@
                         <!--SESSÃO DO SUS-->
                         <section id="sec_sus">
                             <label for="inputSus">Carteira do SUS</label><br>
-                            <input onblur="verificaInputs(this)" type="number" name="sus" id="sus" class="resposta"
-                                placeholder="Números da carteira">
+                            <input onclick="tirarVermelho(this)" onblur="verificaInputs(this)" type="text" name="sus"
+                                id="sus" class="resposta" placeholder="XXXXXXXXXXXXXXX" maxlength="15"
+                                onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                         </section>
 
                     </section>
@@ -249,16 +253,18 @@
                     <section id="form_cinco">
                         <!--SESSÃO DO PESO-->
                         <section id="sec_peso">
-                            <label for="inputPeso">Peso:</label><br>
-                            <input onblur="verificaInputs(this), calculoImc()" type="number" name="peso" id="peso"
-                                class="resposta" placeholder="Peso">
+                            <label for="inputPeso">Peso (kg):</label><br>
+                            <input onclick="tirarVermelho(this)" onblur="verificaInputs(this), calculoImc()"
+                                type="number" name="peso" id="peso" class="resposta" placeholder="Peso"
+                                onkeypress="return event.charCode >= 48 && event.charCode <= 57" min="0" max="500">
                         </section>
 
                         <!--SESSÃO DA ALTURA-->
                         <section id="sec_altura">
-                            <label for="inputAltura">Altura:</label><br>
-                            <input onblur="verificaInputs(this), calculoImc()" type="number" name="altura" id="altura"
-                                class="resposta" placeholder="Altura">
+                            <label for="inputAltura">Altura (cm):</label><br>
+                            <input onclick="tirarVermelho(this)" onblur="verificaInputs(this), calculoImc()"
+                                type="number" name="altura" id="altura" class="resposta" placeholder="Altura"
+                                onkeypress="return event.charCode >= 48 && event.charCode <= 57" min="0" max="300">
                         </section>
 
                         <!--SESSÃO DA COMORBIDADE-->
@@ -315,6 +321,9 @@
 
                     </section>
                     <button onclick="blocoExibicao()" id="button" type="submit">Envia</button>
+                    <br>
+                    <small>Progresso <strong id="completo"></strong></small>
+                    <div id="progressbar"></div>
 
                     <div id="bloco_confirmacao">
                         <article id="article">
@@ -355,7 +364,7 @@
                     <button onclick="cadastrarEmail()">Cadastrar</button>
                 </div>
             </div>
-            <p><small>Vacina Ai©, 2021 - Todos os direitos reservados.</small></small></p>
+            <p><small>Vacina Ai©. Acesso em: <date></date></small></small></p>
             <div id="links-footer">
                 <a href="#" title="Youtube" target="_blank" rel="noopener noreferrer"><i
                         class="fab fa-whatsapp"></i></a>
