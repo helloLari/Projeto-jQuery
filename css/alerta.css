@@ -25,6 +25,7 @@
 
 #alerta-card-cont {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -98,11 +99,60 @@
 #tabela-container {
     background-color: var(--cor-fundo-Xclara);
     text-align: center;
+    padding: 15px 0 35px;
 }
 
 #tabela {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: inline-grid;
+    grid-template-columns: repeat(4, max-content);
+    background-color: var(--cor-fundo-XXclara);
+    gap: 1ch;
+    padding: 1ch 0.5ch;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 999px) {
+    #tabela {
+        grid-template-columns: repeat(2, max-content);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #tabela {
+        grid-template-columns: repeat(2, 180px);
+    }
+}
+
+.alerta0 {
+    background-color: var(--cor-fundo-clara);
+    padding: 0.5ch;
+    border-radius: 8px 0 0 8px;
+}
+
+.alerta1,
+.alerta2,
+.alerta3,
+.alerta4 {
+    padding: 0.5ch;
+    margin-left: -1ch;
+    border-radius: 0 8px 8px 0;
+}
+
+.a-fechado {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.a-restricoes {
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+.a-aberto {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+.a-definido {
+    background-color: rgba(0, 0, 255, 0.2);
 }
 
 .alerta2,

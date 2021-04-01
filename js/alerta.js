@@ -75,11 +75,11 @@ function atualizarTabela(alerta) {
 }
 
 function descobrirCor(numero) {
-    if (numero >= 90) {
+    if (numero >= 80) {
         return "red";
-    } else if (numero >= 80) {
-        return "orange";
     } else if (numero >= 70) {
+        return "orange";
+    } else if (numero >= 60) {
         return "yellow";
     } else {
         return "green";
