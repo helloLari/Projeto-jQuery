@@ -113,18 +113,6 @@
     border-radius: 8px;
 }
 
-@media screen and (max-width: 999px) {
-    #tabela {
-        grid-template-columns: repeat(2, max-content);
-    }
-}
-
-@media screen and (max-width: 550px) {
-    #tabela {
-        grid-template-columns: repeat(2, 180px);
-    }
-}
-
 .alerta0 {
     background-color: var(--cor-fundo-clara);
     padding: 0.5ch;
@@ -160,4 +148,26 @@
 .alerta3,
 .alerta4 {
     display: none;
+}
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ------- Media Queries ------ */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
+@media screen and (max-width: 999px) {
+    #tabela {
+        grid-template-columns: repeat(2, max-content);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #tabela {
+        grid-template-columns: repeat(2, 180px);
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #tabela {
+        grid-template-columns: repeat(2, 170px);
+    }
 }

@@ -53,27 +53,6 @@
     max-width: 1500px;
 }
 
-@media screen and (max-width: 650px) {
-    #slideshow {
-        width: 400px !important;
-        height: 300px !important;
-    }
-
-    #slideshow img {
-        width: 400px !important;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    #slideshow {
-        width: 300px !important;
-    }
-
-    #slideshow img {
-        width: 300px !important;
-    }
-}
-
 #titulo2 {
     font-size: 3em;
     text-align: center;
@@ -162,4 +141,34 @@
     padding: 15px 15px;
     line-height: 160%;
     text-align: center;
+}
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+/* ------- Media Queries ------ */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
+
+@media screen and (max-width: 650px) {
+    #slideshow,
+    #slideshow ul,
+    #slideshow ul li {
+        width: 400px !important;
+        height: 260px !important;
+    }
+
+    #slideshow img {
+        width: 400px !important;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #slideshow,
+    #slideshow ul,
+    #slideshow ul li {
+        width: 300px !important;
+        height: 200px !important;
+    }
+
+    #slideshow img {
+        width: 300px !important;
+    }
 }
