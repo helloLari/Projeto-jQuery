@@ -12,7 +12,7 @@ function tirarVermelho(campo) {
 }
 
 function verificaInputs(input) {
-    if (input.value == "") {
+    if (input.value == "" || input.value == "vazio") {
         input.style.background = "#f6cacc";
         if (inputsContados.includes(input.id)) {
             let index = inputsContados.indexOf(input.id);
@@ -163,7 +163,7 @@ function blocoExibicao() {
         if (item.control.checked) vacinar = true;
     }
     // Testa a profissão
-    if (!$("#profissao")[0][9].selected) vacinar = true;
+    if (!$("#profissao")[0][10].selected) vacinar = true;
     // Testa Gestante
     if ($("#gestante")[0][1].selected) vacinar = true;
     // Testa Idade

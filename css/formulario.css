@@ -107,9 +107,8 @@ fieldset legend {
     height: 30px;
     background-color: trasparent;
     border: none;
+    margin: 0 0 -6px 0;
 }
-
-/*parte um do formulario*/
 
 /*barra com o nome CADASTRO DE VACINAÇÃO*/
 #cadas {
@@ -205,6 +204,7 @@ label {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     font-weight: 600;
     padding: 10px;
+    margin: 12px 0;
     color: var(--cor-fundo-XXclara);
 }
 

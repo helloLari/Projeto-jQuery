@@ -92,7 +92,9 @@
                             <section id="sec_mes">
 
                                 <label for="inputMes">Mes</label><br>
-                                <select onblur="verificaInputs(this)" name="mes" id="mes" class="resposta">
+                                <select onclick="tirarVermelho(this)" oninput="verificaInputs(this)" name="mes" id="mes"
+                                    class="resposta">
+                                    <option value="vazio">-</option>
                                     <option value="1">Janeiro</option>
                                     <option value="2">Fevereiro</option>
                                     <option value="3">Março</option>
@@ -119,7 +121,8 @@
                             <!--seção da etnia-->
                             <section id="sec_etnia">
                                 <label for="inputEtnia">Etnia</label> <br>
-                                <select onblur="verificaInputs(this)" name="etnia" id="etnia" class="resposta">
+                                <select onclick="tirarVermelho(this)" oninput="verificaInputs(this)" name="etnia"
+                                    id="etnia" class="resposta">
                                     <option value="vazio">-</option>
                                     <option value="01">Branca</option>
                                     <option value="02">Preta</option>
@@ -146,8 +149,8 @@
                             <!--seção do sexo-->
                             <section id="sec_sexo">
                                 <label for="inputSexo">Sexo:</label> <br>
-                                <select onblur="verificaInputs(this), VerificaSexo()" oninput="VerificaSexo()"
-                                    name="sexo" id="sexo" class="resposta">
+                                <select onclick="tirarVermelho(this)" oninput="verificaInputs(this), VerificaSexo()"
+                                    oninput="VerificaSexo()" name="sexo" id="sexo" class="resposta">
                                     <option value="vazio">-</option>
                                     <option value="feminino">Feminino</option>
                                     <option value="masculino">Masculino</option>
@@ -171,8 +174,9 @@
                             <!--seção da profissao-->
                             <section id="sec_profissao">
                                 <label for="inputProfissao">Profissão:</label><br>
-                                <select onblur="verificaInputs(this)" name="profissao" id="profissao" class="resposta">
-                                    <option value="outras">-</option>
+                                <select onclick="tirarVermelho(this)" oninput="verificaInputs(this)" name="profissao"
+                                    id="profissao" class="resposta">
+                                    <option value="vazio">-</option>
                                     <option value="médico">Médico</option>
                                     <option value="enfermeiro">Enfermeiro</option>
                                     <option value="fisioterapeuta">Fisioterapeuta</option>
