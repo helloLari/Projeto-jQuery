@@ -187,7 +187,7 @@ h1 {
     color: var(--cor-texto-clara);
     position: absolute;
     top: 85px;
-    translate: 0 -50%;
+    position: translate(0, -50%);
 }
 
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
