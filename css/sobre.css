@@ -1,7 +1,7 @@
 .conteudo {
     margin: auto;
     width: 90%;
-    padding-top: 100px;
+    padding-top: 30px;
     max-width: 1500px;
 }
 
@@ -11,6 +11,13 @@
     color: var(--cor-fundo-escuro);
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.658);
     padding: 0;
+}
+
+/* Fundos seções */
+
+.fundo-claro {
+    background-color: var(--cor-fundo-Xclara);
+    padding: 20px 0 120px;
 }
 
 #texto {
@@ -31,7 +38,7 @@
     background: var(--cor-fundo-medio);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 55px;
-    margin: 15% auto;
+    margin: 100px auto;
 }
 
 /*
@@ -41,8 +48,29 @@
 .servicos {
     width: 90%;
     margin: auto;
-    padding-top: 100px;
+
     max-width: 1500px;
+}
+
+@media screen and (max-width: 650px) {
+    #slideshow {
+        width: 400px !important;
+        height: 300px !important;
+    }
+
+    #slideshow img {
+        width: 400px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #slideshow {
+        width: 300px !important;
+    }
+
+    #slideshow img {
+        width: 300px !important;
+    }
 }
 
 #titulo2 {
@@ -63,7 +91,7 @@
 .quemSomos {
     margin: auto;
     width: 90%;
-    padding-top: 100px;
+    max-width: 1300px;
 }
 
 .quemSomosTitulo {

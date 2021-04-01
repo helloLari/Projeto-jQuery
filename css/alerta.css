@@ -13,9 +13,10 @@
 }
 
 #alerta-info h2 {
-    color: #00c3ff;
+    color: var(--cor-fundo-escuro);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.658);
     font-size: 3em;
-    margin: 20px 0 0;
+    margin: 20px 0 35px;
     text-align: center;
 }
 
