@@ -8,7 +8,7 @@ $(function () {
 });
 
 function tirarVermelho(campo) {
-    campo.style.background = "#DBF6F5";
+    campo.style.background = "#f2fdfd";
 }
 
 function verificaInputs(input) {
@@ -89,7 +89,7 @@ function validaDia(valor) {
         alert("Dia inválido!");
         valor.value = "";
     }
-    document.getElementById("dia").style.background = "#DBF6F5";
+    document.getElementById("dia").style.background = "#f2fdfd";
 }
 
 function validaAno(ano) {
@@ -98,7 +98,7 @@ function validaAno(ano) {
         document.getElementById("ano").style.background = "#f6cacc"; // se for mais de 130 anos ou numero negativo o fundo fica vermelho pois está errado
         ano.value = "";
     } else {
-        document.getElementById("ano").style.background = "#DBF6F5";
+        document.getElementById("ano").style.background = "#f2fdfd";
     }
 }
 
@@ -147,7 +147,7 @@ function VerificaCPF() {
         document.getElementById("cpf").style.background = "#f6cacc"; // alterar background
         return false;
     }
-    document.getElementById("cpf").style.background = "#DBF6F5";
+    document.getElementById("cpf").style.background = "#f2fdfd";
     return true;
 }
 

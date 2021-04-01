@@ -55,12 +55,12 @@ h1 {
     }
 }
 
+/*FORMULARIO GERAL*/
 #form {
-    /*FORMULARIO GERAL*/
     width: 90%;
     max-width: 650px;
     height: auto;
-    background-color: #f2fdfd;
+    background-color: var(--cor-fundo-Xclara);
     margin: 80px auto;
     border-radius: 10px;
     padding-bottom: 5px;
@@ -72,7 +72,6 @@ h1 {
     }
 
     #form {
-        /*FORMULARIO GERAL*/
         width: 98%;
     }
 }
@@ -85,7 +84,7 @@ fieldset {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: var(--cor-fundo-Xclara);
+    background-color: var(--cor-fundo-XXclara);
     border: none;
     border-radius: 8px;
 }
@@ -94,7 +93,7 @@ fieldset div {
     padding: 5px 8px;
 }
 fieldset legend {
-    background-color: var(--cor-fundo-Xclara);
+    background-color: var(--cor-fundo-XXclara);
     border-radius: 8px;
     padding: 2px 15px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.096);
@@ -111,8 +110,9 @@ fieldset legend {
 }
 
 /*parte um do formulario*/
+
+/*barra com o nome CADASTRO DE VACINAÇÃO*/
 #cadas {
-    /*barra com o nome CADASTRO DE VACINAÇÃO*/
     width: 100%;
     height: 50px;
     background-color: #216b69;
@@ -180,7 +180,7 @@ fieldset legend {
 .resposta {
     border: 0;
     font-family: monospace;
-    background-color: #dbf6f5;
+    background-color: var(--cor-fundo-XXclara);
     margin: 10px;
     padding: 9px 3px;
     outline: none;
