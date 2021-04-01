@@ -18,6 +18,15 @@ h1 {
     font-family: serif;
 }
 
+.titulo {
+    margin-top: -40px;
+    font-size: 3em;
+    text-align: center;
+    color: var(--cor-fundo-escuro);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.658);
+    padding: 0;
+}
+
 #para {
     padding: 5px 5px;
     font-size: 20px;

@@ -60,298 +60,301 @@
     </header>
     <main>
 
-        <div id="form-container">
-            <div id="form">
+        <h2 class="titulo">Formulário de Vacinação</h1>
+            <div id="form-container">
+                <div id="form">
 
-                <!--mensagem de topo-->
-                <div id="cadas">Cadastro de Vacinaçao</div>
-                <section id="dado">
+                    <!--mensagem de topo-->
+                    <div id="cadas">Cadastro de Vacinaçao</div>
+                    <section id="dado">
 
-                    <!--primeiro item do formulario-->
-                    <section id="sec_nome">
-                        <label for="inputNome">Nome</label> <br>
-                        <input onclick="tirarVermelho(this)" onblur="verificaInputs(this)" type="text" id="nome"
-                            placeholder="Digite o seu nome" class="resposta"> <br>
-                    </section>
-
-                    <!--seção com data, mes, ano e etnia-->
-                    <section id="form_um">
-
-                        <!--seção do dia-->
-                        <section id="sec_dia">
-                            <label for="inputDia">Dia</label><br>
-                            <input onclick="tirarVermelho(this)" onblur="verificaInputs(this), validaDia(this)"
-                                type="number" name="dia" id="dia" placeholder="Dia " class="resposta" min="1" max="31"
-                                maxlength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <!--primeiro item do formulario-->
+                        <section id="sec_nome">
+                            <label for="inputNome">Nome</label> <br>
+                            <input onclick="tirarVermelho(this)" onblur="verificaInputs(this)" type="text" id="nome"
+                                placeholder="Digite o seu nome" class="resposta"> <br>
                         </section>
 
-                        <!--seção do mes-->
-                        <section id="sec_mes">
+                        <!--seção com data, mes, ano e etnia-->
+                        <section id="form_um">
 
-                            <label for="inputMes">Mes</label><br>
-                            <select onblur="verificaInputs(this)" name="mes" id="mes" class="resposta">
-                                <option value="1">Janeiro</option>
-                                <option value="2">Fevereiro</option>
-                                <option value="3">Março</option>
-                                <option value="4">Abril</option>
-                                <option value="5">Maio</option>
-                                <option value="6">Junho</option>
-                                <option value="7">Julho</option>
-                                <option value="8">Agosto</option>
-                                <option value="9">Setembro</option>
-                                <option value="10">Outubro</option>
-                                <option value="11">Novembro</option>
-                                <option value="12">Dezembro</option>
-                            </select>
+                            <!--seção do dia-->
+                            <section id="sec_dia">
+                                <label for="inputDia">Dia</label><br>
+                                <input onclick="tirarVermelho(this)" onblur="verificaInputs(this), validaDia(this)"
+                                    type="number" name="dia" id="dia" placeholder="Dia " class="resposta" min="1"
+                                    max="31" maxlength="2"
+                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                            </section>
+
+                            <!--seção do mes-->
+                            <section id="sec_mes">
+
+                                <label for="inputMes">Mes</label><br>
+                                <select onblur="verificaInputs(this)" name="mes" id="mes" class="resposta">
+                                    <option value="1">Janeiro</option>
+                                    <option value="2">Fevereiro</option>
+                                    <option value="3">Março</option>
+                                    <option value="4">Abril</option>
+                                    <option value="5">Maio</option>
+                                    <option value="6">Junho</option>
+                                    <option value="7">Julho</option>
+                                    <option value="8">Agosto</option>
+                                    <option value="9">Setembro</option>
+                                    <option value="10">Outubro</option>
+                                    <option value="11">Novembro</option>
+                                    <option value="12">Dezembro</option>
+                                </select>
+                            </section>
+
+                            <!--seção do ano-->
+                            <section id="sec_ano">
+                                <label for="inputAno">Ano</label> <br>
+                                <input onclick="tirarVermelho(this)" onblur="verificaInputs(this), validaAno(this)"
+                                    type="number" id="ano" placeholder="Ano" class="resposta" min="1891" max="2021"
+                                    maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                            </section>
+
+                            <!--seção da etnia-->
+                            <section id="sec_etnia">
+                                <label for="inputEtnia">Etnia</label> <br>
+                                <select onblur="verificaInputs(this)" name="etnia" id="etnia" class="resposta">
+                                    <option value="vazio">-</option>
+                                    <option value="01">Branca</option>
+                                    <option value="02">Preta</option>
+                                    <option value="03">Parda</option>
+                                    <option value="04">Amarela</option>
+                                    <option value="05">Indígena</option>
+                                    <option value="06">Não informado</option>
+                                </select>
+                            </section>
                         </section>
 
-                        <!--seção do ano-->
-                        <section id="sec_ano">
-                            <label for="inputAno">Ano</label> <br>
-                            <input onclick="tirarVermelho(this)" onblur="verificaInputs(this), validaAno(this)"
-                                type="number" id="ano" placeholder="Ano" class="resposta" min="1891" max="2021"
-                                maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <!--seção com sexo gestante e CPF-->
+                        <section id="form_dois">
+
+                            <!--seção do cpf-->
+                            <section id="sec_cpf">
+                                <label for="inputCpf">CPF:</label><br>
+                                <input maxlength="11" onclick="tirarVermelho(this)"
+                                    onblur="verificaInputs(this), VerificaCPF()" type="text" id="cpf"
+                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                    placeholder="XXXXXXXXXXX" class="resposta">
+                            </section>
+
+                            <!--seção do sexo-->
+                            <section id="sec_sexo">
+                                <label for="inputSexo">Sexo:</label> <br>
+                                <select onblur="verificaInputs(this), VerificaSexo()" oninput="VerificaSexo()"
+                                    name="sexo" id="sexo" class="resposta">
+                                    <option value="vazio">-</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="naoInformado">Não informado</option>
+                                </select>
+                            </section>
+
+                            <!--seção da gestante-->
+                            <section id="sec_gestante" style="display: none;">
+                                <label for="inputGestante">Gestante</label> <br>
+                                <select name="gestante" id="gestante" class="resposta">
+                                    <option value="Não">Não</option>
+                                    <option value="Sim">Sim</option>
+                                </select>
+                            </section>
                         </section>
 
-                        <!--seção da etnia-->
-                        <section id="sec_etnia">
-                            <label for="inputEtnia">Etnia</label> <br>
-                            <select onblur="verificaInputs(this)" name="etnia" id="etnia" class="resposta">
-                                <option value="vazio">-</option>
-                                <option value="01">Branca</option>
-                                <option value="02">Preta</option>
-                                <option value="03">Parda</option>
-                                <option value="04">Amarela</option>
-                                <option value="05">Indígena</option>
-                                <option value="06">Não informado</option>
-                            </select>
+                        <!--Seção com profissão e numero do sus-->
+                        <section id="form_tres">
+
+                            <!--seção da profissao-->
+                            <section id="sec_profissao">
+                                <label for="inputProfissao">Profissão:</label><br>
+                                <select onblur="verificaInputs(this)" name="profissao" id="profissao" class="resposta">
+                                    <option value="outras">-</option>
+                                    <option value="médico">Médico</option>
+                                    <option value="enfermeiro">Enfermeiro</option>
+                                    <option value="fisioterapeuta">Fisioterapeuta</option>
+                                    <option value="recepcionista">Recepcionista</option>
+                                    <option value="segurança">Segurança</option>
+                                    <option value="motorista">Motorista</option>
+                                    <option value="cuidadores">Cuidadores de Idosos </option>
+                                    <option value="doulas">Doulas/Parteiras</option>
+                                    <option value="assistentes">Assistentes Sociais</option>
+                                    <option value="outras">Outros</option>
+                                </select>
+                            </section>
+
+                            <!--SESSÃO DO SUS-->
+                            <section id="sec_sus">
+                                <label for="inputSus">Carteira do SUS</label><br>
+                                <input onclick="tirarVermelho(this)" onblur="verificaInputs(this)" type="text"
+                                    name="sus" id="sus" class="resposta" placeholder="XXXXXXXXXXXXXXX" maxlength="15"
+                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                            </section>
+
                         </section>
-                    </section>
-
-                    <!--seção com sexo gestante e CPF-->
-                    <section id="form_dois">
-
-                        <!--seção do cpf-->
-                        <section id="sec_cpf">
-                            <label for="inputCpf">CPF:</label><br>
-                            <input maxlength="11" onclick="tirarVermelho(this)"
-                                onblur="verificaInputs(this), VerificaCPF()" type="text" id="cpf"
-                                onkeypress="return event.charCode >= 48 && event.charCode <= 57"
-                                placeholder="XXXXXXXXXXX" class="resposta">
-                        </section>
-
-                        <!--seção do sexo-->
-                        <section id="sec_sexo">
-                            <label for="inputSexo">Sexo:</label> <br>
-                            <select onblur="verificaInputs(this), VerificaSexo()" oninput="VerificaSexo()" name="sexo"
-                                id="sexo" class="resposta">
-                                <option value="vazio">-</option>
-                                <option value="feminino">Feminino</option>
-                                <option value="masculino">Masculino</option>
-                                <option value="naoInformado">Não informado</option>
-                            </select>
-                        </section>
-
-                        <!--seção da gestante-->
-                        <section id="sec_gestante" style="display: none;">
-                            <label for="inputGestante">Gestante</label> <br>
-                            <select name="gestante" id="gestante" class="resposta">
-                                <option value="Não">Não</option>
-                                <option value="Sim">Sim</option>
-                            </select>
-                        </section>
-                    </section>
-
-                    <!--Seção com profissão e numero do sus-->
-                    <section id="form_tres">
-
-                        <!--seção da profissao-->
-                        <section id="sec_profissao">
-                            <label for="inputProfissao">Profissão:</label><br>
-                            <select onblur="verificaInputs(this)" name="profissao" id="profissao" class="resposta">
-                                <option value="outras">-</option>
-                                <option value="médico">Médico</option>
-                                <option value="enfermeiro">Enfermeiro</option>
-                                <option value="fisioterapeuta">Fisioterapeuta</option>
-                                <option value="recepcionista">Recepcionista</option>
-                                <option value="segurança">Segurança</option>
-                                <option value="motorista">Motorista</option>
-                                <option value="cuidadores">Cuidadores de Idosos </option>
-                                <option value="doulas">Doulas/Parteiras</option>
-                                <option value="assistentes">Assistentes Sociais</option>
-                                <option value="outras">Outros</option>
-                            </select>
-                        </section>
-
-                        <!--SESSÃO DO SUS-->
-                        <section id="sec_sus">
-                            <label for="inputSus">Carteira do SUS</label><br>
-                            <input onclick="tirarVermelho(this)" onblur="verificaInputs(this)" type="text" name="sus"
-                                id="sus" class="resposta" placeholder="XXXXXXXXXXXXXXX" maxlength="15"
-                                onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-                        </section>
-
-                    </section>
-                    <!--Seção com as opções de vacinas-->
-                    <section id="form_quatro">
-                        <fieldset>
-                            <legend>Vacinas anteriores: </legend>
-                            <div>
-                                <input type="checkbox" name="checkbox-1" id="checkbox-1">
-                                <label class="vacina" for="checkbox-1">Hepatite A</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="checkbox-2" id="checkbox-2">
-                                <label class="vacina" for="checkbox-2">Hepatite B</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="checkbox-3" id="checkbox-3">
-                                <label class="vacina" for="checkbox-3">Poliomelite Inativada</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="checkbox-4" id="checkbox-4">
-                                <label class="vacina" for="checkbox-4">Febre Amarela</label> <br>
-                            </div>
-
-                            <div>
-                                <input type="checkbox" name="checkbox-1" id="checkbox-1">
-                                <label class="vacina" for="checkbox-1">Tríplice-viral</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="checkbox-2" id="checkbox-2">
-                                <label class="vacina" for="checkbox-2">Tetano</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="checkbox-3" id="checkbox-3">
-                                <label class="vacina" for="checkbox-3">Pneumo 23</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="checkbox-4" id="checkbox-4">
-                                <label class="vacina" for="checkbox-4">influenza </label> <br>
-                            </div>
-
-                            <div>
-                                <input type="checkbox" name="checkbox-1" id="checkbox-1">
-                                <label class="vacina" for="checkbox-1">HPV</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="checkbox-2" id="checkbox-2">
-                                <label class="vacina" for="checkbox-2">Tríplice Bacteriano (DTP)</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="checkbox-3" id="checkbox-3">
-                                <label class="vacina" for="checkbox-3">Tetraviral (SCRV)</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="checkbox-4" id="checkbox-4">
-                                <label class="vacina" for="checkbox-4">Varicela</label>
-                            </div>
-                        </fieldset>
-                    </section>
-
-                    <!--Seção de peso, altura e comorbidade-->
-                    <section id="form_cinco">
-                        <!--SESSÃO DO PESO-->
-                        <section id="sec_peso">
-                            <label for="inputPeso">Peso (kg):</label><br>
-                            <input onclick="tirarVermelho(this)" onblur="verificaInputs(this), calculoImc()"
-                                type="number" name="peso" id="peso" class="resposta" placeholder="Peso"
-                                onkeypress="return event.charCode >= 48 && event.charCode <= 57" min="0" max="500">
-                        </section>
-
-                        <!--SESSÃO DA ALTURA-->
-                        <section id="sec_altura">
-                            <label for="inputAltura">Altura (cm):</label><br>
-                            <input onclick="tirarVermelho(this)" onblur="verificaInputs(this), calculoImc()"
-                                type="number" name="altura" id="altura" class="resposta" placeholder="Altura"
-                                onkeypress="return event.charCode >= 48 && event.charCode <= 57" min="0" max="300">
-                        </section>
-
-                        <!--SESSÃO DA COMORBIDADE-->
-                        <section id="sec_comorbidade">
-                            <label for="inputComorbidade">Obesidade Grau III</label><br>
-                            <input readonly type="text" name="Comorbidade" id="obesidade" class="resposta">
-                        </section>
-                    </section>
-
-                    <section id="form_seis">
-                        <section id="sec_comorbidades">
+                        <!--Seção com as opções de vacinas-->
+                        <section id="form_quatro">
                             <fieldset>
-                                <legend>Outras Comorbidades: </legend>
+                                <legend>Vacinas anteriores: </legend>
                                 <div>
-                                    <input type="checkbox" name="checkbox-1b" id="checkbox-1b">
-                                    <label class="comorbidades" for="checkbox-1b">Hipertensão Arterial</label>
+                                    <input type="checkbox" name="checkbox-1" id="checkbox-1">
+                                    <label class="vacina" for="checkbox-1">Hepatite A</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="checkbox-2b" id="checkbox-2b">
-                                    <label class="comorbidades" for="checkbox-2b">Hipertensão Resistente </label>
+                                    <input type="checkbox" name="checkbox-2" id="checkbox-2">
+                                    <label class="vacina" for="checkbox-2">Hepatite B</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="checkbox-3b" id="checkbox-3b">
-                                    <label class="comorbidades" for="checkbox-3b">Diabetes</label>
+                                    <input type="checkbox" name="checkbox-3" id="checkbox-3">
+                                    <label class="vacina" for="checkbox-3">Poliomelite Inativada</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="checkbox-4b" id="checkbox-4b">
-                                    <label class="comorbidades" for="checkbox-4b">Doença Pulmonar</label> <br>
-                                </div>
-
-                                <div>
-                                    <input type="checkbox" name="checkbox-5b" id="checkbox-5b">
-                                    <label class="comorbidades" for="checkbox-5b">Doença Cardiovascular</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" name="checkbox-6b" id="checkbox-6b">
-                                    <label class="comorbidades" for="checkbox-6b">Imunossuprimido</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" name="checkbox-7b" id="checkbox-7b">
-                                    <label class="comorbidades" for="checkbox-7b">Anemia Falciforme</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" name="checkbox-8b" id="checkbox-8b">
-                                    <label class="comorbidades" for="checkbox-8b">Sindrome de Down</label> <br>
+                                    <input type="checkbox" name="checkbox-4" id="checkbox-4">
+                                    <label class="vacina" for="checkbox-4">Febre Amarela</label> <br>
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" name="checkbox-9b" id="checkbox-9b">
-                                    <label class="comorbidades" for="checkbox-9b">Transplantados</label>
+                                    <input type="checkbox" name="checkbox-1" id="checkbox-1">
+                                    <label class="vacina" for="checkbox-1">Tríplice-viral</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="checkbox-2" id="checkbox-2">
+                                    <label class="vacina" for="checkbox-2">Tetano</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="checkbox-3" id="checkbox-3">
+                                    <label class="vacina" for="checkbox-3">Pneumo 23</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="checkbox-4" id="checkbox-4">
+                                    <label class="vacina" for="checkbox-4">influenza </label> <br>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="checkbox-1" id="checkbox-1">
+                                    <label class="vacina" for="checkbox-1">HPV</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="checkbox-2" id="checkbox-2">
+                                    <label class="vacina" for="checkbox-2">Tríplice Bacteriano (DTP)</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="checkbox-3" id="checkbox-3">
+                                    <label class="vacina" for="checkbox-3">Tetraviral (SCRV)</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="checkbox-4" id="checkbox-4">
+                                    <label class="vacina" for="checkbox-4">Varicela</label>
                                 </div>
                             </fieldset>
                         </section>
 
-                    </section>
-                    <button onclick="blocoExibicao()" id="button" type="submit">Envia</button>
-                    <br>
-                    <small>Progresso <strong id="completo"></strong></small>
-                    <div id="progressbar"></div>
+                        <!--Seção de peso, altura e comorbidade-->
+                        <section id="form_cinco">
+                            <!--SESSÃO DO PESO-->
+                            <section id="sec_peso">
+                                <label for="inputPeso">Peso (kg):</label><br>
+                                <input onclick="tirarVermelho(this)" onblur="verificaInputs(this), calculoImc()"
+                                    type="number" name="peso" id="peso" class="resposta" placeholder="Peso"
+                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" min="0" max="500">
+                            </section>
 
-                    <div id="bloco_confirmacao">
-                        <article id="article">
-                            <p id="confirmacaoDados"></p>
-                        </article>
-                    </div>
+                            <!--SESSÃO DA ALTURA-->
+                            <section id="sec_altura">
+                                <label for="inputAltura">Altura (cm):</label><br>
+                                <input onclick="tirarVermelho(this)" onblur="verificaInputs(this), calculoImc()"
+                                    type="number" name="altura" id="altura" class="resposta" placeholder="Altura"
+                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" min="0" max="300">
+                            </section>
+
+                            <!--SESSÃO DA COMORBIDADE-->
+                            <section id="sec_comorbidade">
+                                <label for="inputComorbidade">Obesidade Grau III</label><br>
+                                <input readonly type="text" name="Comorbidade" id="obesidade" class="resposta">
+                            </section>
+                        </section>
+
+                        <section id="form_seis">
+                            <section id="sec_comorbidades">
+                                <fieldset>
+                                    <legend>Outras Comorbidades: </legend>
+                                    <div>
+                                        <input type="checkbox" name="checkbox-1b" id="checkbox-1b">
+                                        <label class="comorbidades" for="checkbox-1b">Hipertensão Arterial</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="checkbox-2b" id="checkbox-2b">
+                                        <label class="comorbidades" for="checkbox-2b">Hipertensão Resistente </label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="checkbox-3b" id="checkbox-3b">
+                                        <label class="comorbidades" for="checkbox-3b">Diabetes</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="checkbox-4b" id="checkbox-4b">
+                                        <label class="comorbidades" for="checkbox-4b">Doença Pulmonar</label> <br>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" name="checkbox-5b" id="checkbox-5b">
+                                        <label class="comorbidades" for="checkbox-5b">Doença Cardiovascular</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="checkbox-6b" id="checkbox-6b">
+                                        <label class="comorbidades" for="checkbox-6b">Imunossuprimido</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="checkbox-7b" id="checkbox-7b">
+                                        <label class="comorbidades" for="checkbox-7b">Anemia Falciforme</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="checkbox-8b" id="checkbox-8b">
+                                        <label class="comorbidades" for="checkbox-8b">Sindrome de Down</label> <br>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" name="checkbox-9b" id="checkbox-9b">
+                                        <label class="comorbidades" for="checkbox-9b">Transplantados</label>
+                                    </div>
+                                </fieldset>
+                            </section>
+
+                        </section>
+                        <button onclick="blocoExibicao()" id="button" type="submit">Envia</button>
+                        <br>
+                        <small>Progresso <strong id="completo"></strong></small>
+                        <div id="progressbar"></div>
+
+                        <div id="bloco_confirmacao">
+                            <article id="article">
+                                <p id="confirmacaoDados"></p>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+                <div id="form-img"></div>
+            </div>
+
+            <div id="resultado-cadastro">
+                <p></p>
+            </div>
+
+            <div id="info">
+                <section id="regras">
+                    <h1>Atenção! Para realizar o seu cadastro siga as regras a seguir:</h1>
+                    <section id="para">
+                        <p> * Preencha todos os campos com os SEUS DADOS PESSOAIS. </p>
+                        <p> * Em qualquer tentativa de fraude o cadastro será anulado e, caso apto para receber as doses
+                            da
+                            vacina, o candidato será desclassificado.</p>
+                        <p> * Não deixe nenhum campo vazio.</p>
+                        <p> * Caso não receba um email de confirmação entre em contato com o nosso
+                            suporte(vacinaai@suporte.com.br)</p>
+                    </section>
                 </section>
             </div>
-            <div id="form-img"></div>
-        </div>
-
-        <div id="resultado-cadastro">
-            <p></p>
-        </div>
-
-        <div id="info">
-            <section id="regras">
-                <h1>Atenção! Para realizar o seu cadastro siga as regras a seguir:</h1>
-                <section id="para">
-                    <p> * Preencha todos os campos com os SEUS DADOS PESSOAIS. </p>
-                    <p> * Em qualquer tentativa de fraude o cadastro será anulado e, caso apto para receber as doses da
-                        vacina, o candidato será desclassificado.</p>
-                    <p> * Não deixe nenhum campo vazio.</p>
-                    <p> * Caso não receba um email de confirmação entre em contato com o nosso
-                        suporte(vacinaai@suporte.com.br)</p>
-                </section>
-            </section>
-        </div>
 
     </main>
     <footer>

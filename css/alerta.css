@@ -90,7 +90,7 @@
     color: var(--cor-texto-clara);
     position: absolute;
     top: 85px;
-    translate: 0 -50%;
+    transform: translate(0, -50%);
 }
 
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼*/
